@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Gantari:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&family=Major+Mono+Display&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@font-face {
+  font-family: 'Soul Note Display Demo Light';
+  src: url(https://www.fontspace.com/soul-note-display-trial-font-f110131);
+  font-style: normal;
+}
+@font-face {
+  font-family:'WASTED PERSONAL';
+  src: url(https://www.fontspace.com/wasted-font-f70520);
+  font-style: normal;
+  font-weight: 500;
+}
+
+*{
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* Internet Explorer/Edge */
+  user-select: none; 
+}
+.ctr-2{
+  height: 100%;
+  width: 80%;
+}
+.body2{
+  display: inline-flex;
+  position: unset;
+  margin-top: 50px;
+  word-spacing: 5px;
+  font-size: 80px;
+}
+.scrollable-content {
+  position: absolute;
+  top: 57%;
+  width: 70%;
+  height: 70vh; /* Ensure height to create a scrollable area */
+  overflow: auto; /* Enable scrolling */
+  left: 60%;
+  transform: translate(-50%, -50%);
+  font-family: 'Soul Note Display Demo Light';
+  font-optical-sizing: auto;
+  font-weight: 1000;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+/* Scrollable content links styling */
+.scrollable-content a {
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  direction: rtl;
+  font-weight: 900;
+  line-height: 50px;
+  letter-spacing: 2px;
+}
+
+.scrollable-content a:hover {
+  color: grey;
+}
+
+/* Hide scrollbar for WebKit browsers */
+.scrollable-content::-webkit-scrollbar {
+  display: none;
+}
+
+/* Optional: hide scrollbar for Firefox */
+.scrollable-content {
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.skillcss{
+  color: black;
+  position: absolute;
+  top: 67%;
+  width: 45%;
+  left: 70%;
+  font-size: 15px;
+  font-weight: 600;
+  transform: translate(-50%, -50%);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.font-class{
+  font-family: 'Soul Note Display Demo Light';
+  font-weight: 620;
+  font-style: normal;
+  font-size: 50px;
+}
+span{
+  font-size: 10px;
+  font-weight: 700;
+  text-transform:none;
+}
+.ctr1 {
+width: 100%;
+margin: 0px;
+position: fixed;
+height: 100%;
+}
+
+.bg-ctr{
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0; justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(85deg, white, rgb(170, 169, 169), white, rgb(179, 182, 182), white, rgb(155, 152, 152), rgb(92, 92, 92));
+    background-size: 300% 300%;
+    animation: color 50s ease-out reverse infinite;
+    margin: 0;
+    padding: 0;
+    overflow: auto; /* Allows scrolling if content overflows */
+}
+
+@keyframes color {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.bg-ctr-1{
+  width: 97%; /* Adjust the width percentage as needed */
+  height: 95%; /* Adjust the height percentage as needed */
+  margin: auto; /* Center the child div horizontally */
+  border: 1px solid black; /* Add border to the child div */
+  box-sizing: border-box; /* Include border in the width and height */
+  position: fixed;
+
+}
+.flex-ctre-12{
+  display: flex;
+  height: 90%;
+}
+.ctr-1{
+  margin-top: 20px;
+  width: 40%;
+}
+
+.ctr-3{
+  height: 10%;
+}
+
+
+.body {
+  display: flex;
+  flex-direction: column;
+  border: 0.2px solid black;
+  margin: 20px 20px;
+  height: auto;
+  width: 98%;
+}
+.box1{
+  margin-left: 20px;
+  width: 100%;
+  font-optical-sizing: auto;
+  margin-top: 0px;
+}
+.box1 p{
+  font-size: 16px;
+  margin-top: 0px;
+}
+
+.box1 h2,
+.box1 p {
+    margin: 0;
+}
+
+
+
+.line-container {
+  height: 100%;
+  flex: 1;
+  margin: 35px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.box2{
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.box2 a{
+  text-decoration: none;
+  line-height: 1.8em;
+  font-size: 14px;
+  color: black;
+display: block;
+font-family: "Plus Jakarta Sans", sans-serif;
+font-optical-sizing: auto;
+font-weight: 700;
+font-style: normal;}
+.box2 a:hover{
+  color: grey;
+}
+
+
+.line-container h2 {
+  font-size: 3.9em; 
+  line-height: 0.8em;
+}
+.line-container p {
+line-height: 1.2em;
+ font-size: 17px; 
+}
+.nav-btn {
+  display: flex;
+  font-size: 13px;
+  position: absolute;
+  margin-bottom: 22px;
+  flex-direction: row;
+  margin-left: 22px;
+  justify-content: space-between;
+  width: 92%;
+  
+}
+
+.nav-btn div a{
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.nav-btn div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.nav-btn a:hover {
+color: grey;
+}
+.nav-btn a{
+  color:black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: none;
+}
+
+.gap-1{
+  display: flex !important;
+  position: relative;
+ gap: 45px;
+    flex-direction: row !important; /* Align items vertically */
+     /* Adjust the gap size as needed */
+}
+
+@media (max-width: 1084) {
+  .CV-gap{
+    margin-left : 45%;
+    }
+    
+    
+}
+.contact-div{
+  margin-top: 30%;
+  position: relative;
+}
+.about-css {
+  margin-top: 80px;
+}
