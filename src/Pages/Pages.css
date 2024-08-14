@@ -1,0 +1,23 @@
+
+
+.project-link:hover {
+    color: #007BFF;
+}
+
+.move-up {
+    opacity: 1;
+    transform: translateY(-50px);  /* Move the clicked project up */
+    animation: fadeInUp 0.8s ease forwards;  /* Animate the movement */
+}
+
+/* Keyframes for the soft movement */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-0px);
+    }
+}

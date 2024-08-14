@@ -83,7 +83,17 @@
   transform: translate(-50%, -50%);
   font-family: "Plus Jakarta Sans", sans-serif;
 }
-
+.CaseStudCss{
+  color: black;
+  position: absolute;
+  top: 95%;
+  width: 85%;
+  left: 50%;
+  font-size: 15px;
+  font-weight: 600;
+  transform: translate(-50%, -50%);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
 .font-class{
   font-family: 'Soul Note Display Demo Light';
   font-weight: 620;
