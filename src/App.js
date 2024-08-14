@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Skills from './Pages/Skills';
+import ProjectDetails from './Pages/ProjectDetails';
 import Projects from './Pages/Projects';
 import About from './Pages/About';
 
@@ -12,7 +12,8 @@ function App() {
         <Routes>
           <Route path="/" element={<About/>} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/skills" element={<Skills />} />  
+          <Route path="/projects/:projectName" element={<ProjectDetails />} />
+           
         </Routes>
       </BrowserRouter>
       

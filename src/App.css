@@ -31,6 +31,24 @@
   word-spacing: 5px;
   font-size: 80px;
 }
+.CaseStudCss{
+  position: absolute;
+  top: 55%;
+  width: 85%;
+  height: 64vh; /* Ensure height to create a scrollable area */
+  overflow: auto; /* Enable scrolling */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+}
+
+.CaseStudCss p{
+  
+}
+.CaseStudCss::-webkit-scrollbar{
+  display: none;
+}
+
 .scrollable-content {
   position: absolute;
   top: 57%;
@@ -45,11 +63,28 @@
   font-size: 60px;
   text-transform: uppercase;
 }
+  .proj-title{
+    margin: 0%;
+    padding: 0px ;
+    height: 30vh;
+    color: black;
+    font-size: 55px !important;
+    font-family: 'Soul Note Display Demo Light';
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    direction: rtl;
+    font-weight: 900;
+    line-height: 50px;
+    letter-spacing: 3px;
+  font-weight: 1000;
+  text-transform: uppercase;
+}
 
 /* Scrollable content links styling */
 .scrollable-content a {
   color: black;
-  display: flex;
+   display: flex;
   flex-wrap: wrap;
   text-decoration: none;
   direction: rtl;
@@ -58,14 +93,17 @@
   letter-spacing: 2px;
 }
 
+
+
 .scrollable-content a:hover {
   color: grey;
 }
 
 /* Hide scrollbar for WebKit browsers */
-.scrollable-content::-webkit-scrollbar {
+ .scrollable-content::-webkit-scrollbar {
   display: none;
 }
+
 
 /* Optional: hide scrollbar for Firefox */
 .scrollable-content {
@@ -83,17 +121,7 @@
   transform: translate(-50%, -50%);
   font-family: "Plus Jakarta Sans", sans-serif;
 }
-.CaseStudCss{
-  color: black;
-  position: absolute;
-  top: 95%;
-  width: 85%;
-  left: 50%;
-  font-size: 15px;
-  font-weight: 600;
-  transform: translate(-50%, -50%);
-  font-family: "Plus Jakarta Sans", sans-serif;
-}
+
 .font-class{
   font-family: 'Soul Note Display Demo Light';
   font-weight: 620;
@@ -226,11 +254,10 @@ line-height: 1.2em;
   display: flex;
   font-size: 13px;
   position: absolute;
-  margin-bottom: 22px;
   flex-direction: row;
   margin-left: 22px;
   justify-content: space-between;
-  width: 92%;
+  width: 96%;
   
 }
 

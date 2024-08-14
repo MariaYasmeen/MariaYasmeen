@@ -1,18 +1,9 @@
-import React, { useState, Suspense } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../Components/Header';
 import './Pages.css';
 
-// Lazy load the components
-const TypeathonCS = React.lazy(() => import('../CaseStudies.jsx/Typeathon'));
-const CrypTrackCS = React.lazy(() => import('../CaseStudies.jsx/CrypTrack'));
-
 const Projects = () => {
-    const [clickedProject, setClickedProject] = useState(null);
-
-    const handleClick = (projectName) => {
-        setClickedProject(projectName);
-    };
-
     const projects = [
         { name: 'typeathon', description: 'Speed Typing Test App | 2024' },
         { name: 'M.Yasmeen', description: 'Clothing Store | 2024' },
@@ -28,43 +19,21 @@ const Projects = () => {
         { name: 'Pizza hut', description: 'UI Project' },
     ];
 
-    const renderProjectDetails = () => {
-        switch (clickedProject) {
-            case 'CrypTrack':
-                return <CrypTrackCS />;
-            case 'typeathon':
-                return <TypeathonCS />;
-            // Add cases for other projects with their respective components
-            default:
-                return null;
-        }
-    };
-
     return (
         <>
             <Header />
-            <div className="body2">
+            <div className="">
                 <div className="scrollable-content">
                     {projects.map((project) => (
-                        clickedProject === null || clickedProject === project.name ? (
-                            <a 
-                                key={project.name} 
-                                href="#" 
-                                onClick={() => handleClick(project.name)}
-                                className={`project-link ${clickedProject === project.name ? 'move-up' : ''}`}
-                            >
-                                {project.name} <span>{project.description}</span>
-                            </a>
-                        ) : null
+                        <Link
+                            key={project.name}
+                            to={`/projects/${project.name}`}
+                            className="project-link"
+                        >
+                            {project.name} <span>{project.description}</span>
+                        </Link>
                     ))}
                 </div>
-
-                {/* Display the related content for the clicked project */}
-                {clickedProject && (
-                    <Suspense fallback={<div>Loading...</div>}>
-                        {renderProjectDetails()}
-                    </Suspense>
-                )}
             </div>
         </>
     );
