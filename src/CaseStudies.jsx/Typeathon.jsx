@@ -13,7 +13,7 @@ function Typeathon() {
                   </div>
                 <div className="item" style={{backgroundColor:"black"}}>
                   <div className="heading1">
-                    <p  style={{textTransform:"uppercase", fontSize:"27px"}}>
+                    <p  style={{textTransform:"uppercase", fontSize:"27px", flex:'none'}}>
                 Developed to provide users with various customizeable modes to practice and evaluate their typing performance in real-time.
                 </p>
                   </div>
@@ -134,7 +134,7 @@ Historical performance data is accessible for continuous improvement.
 </div>  
  </div>
 
- 
+
                 <div className="item"><h3>Technologies Used </h3>
                 <p>
 </p>
