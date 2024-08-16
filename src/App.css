@@ -380,7 +380,7 @@ color: grey;
   z-index: 1; /* Ensure content is above the image */
 }
 
-.item img {
+.item-img {
   transition:  1s all ease;
   position: absolute;
   top: 0;
@@ -393,7 +393,7 @@ color: grey;
   border-radius: 8px; /* Optional: Add some border radius */
 }
 
-.item img:hover {
+.item-img:hover {
     transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
@@ -427,5 +427,3 @@ color: grey;
 ::-ms-scrollbar {
   display: none; /* Hide scrollbar */
 }
-
-

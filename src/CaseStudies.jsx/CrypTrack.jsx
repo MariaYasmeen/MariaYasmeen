@@ -10,7 +10,7 @@ function CrypTrack() {
  <div className="">
                 <div className="item">
                   <h3>This is perigjrenverkj</h3>
-                  <img src='https://blog.olivierlarose.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F2.e3d15ca5.jpg&w=1920&q=75'/>
+                  <img  className= "item-img" src='https://blog.olivierlarose.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F2.e3d15ca5.jpg&w=1920&q=75'/>
                   </div>
                 <div className="item">Item 2\
 
