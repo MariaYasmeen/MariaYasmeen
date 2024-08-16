@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Gantari:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&family=Major+Mono+Display&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
-@font-face {
-  font-family: 'Soul Note Display Demo Light';
-  src: url(https://www.fontspace.com/soul-note-display-trial-font-f110131);
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Anton&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+.urbanist {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
   font-style: normal;
 }
-@font-face {
-  font-family:'WASTED PERSONAL';
-  src: url(https://www.fontspace.com/wasted-font-f70520);
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
   font-style: normal;
-  font-weight: 500;
 }
+
 
 *{
   -webkit-user-select: none; /* Safari */
@@ -31,20 +31,30 @@
   word-spacing: 5px;
   font-size: 80px;
 }
-.CaseStudCss{
-  position: absolute;
-  top: 55%;
-  width: 85%;
-  height: 64vh; /* Ensure height to create a scrollable area */
-  overflow: auto; /* Enable scrolling */
+
+.CaseStudCss {
+  position: fixed; /* Use fixed positioning to make it appear relative to the viewport */
+  bottom: 0; /* Position it at the bottom of the viewport */
   left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 15px;
+  top: 16px; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust horizontal centering */
+  width: 97% !important; /* Ensure it fits within the viewport with some padding */
+  height: 95vh; /* Fixed height for a scrollable area */
+  overflow: auto; /* Enable scrolling if the content exceeds the height */
+  letter-spacing: 1px;
+  font-size: 14px;
+  border-radius: 4px;
+  color: lightgray; /* Text color */
+  z-index: 10; /* Make sure it's above most content but adjust as needed */
 }
 
-.CaseStudCss p{
-  
+.CaseStudCss p {
+font-size: 17px;
+  font-family: "Urbanist", sans-serif;
+    color: lightgrey; /* Text color */
 }
+
+
 .CaseStudCss::-webkit-scrollbar{
   display: none;
 }
@@ -52,51 +62,53 @@
 .scrollable-content {
   position: absolute;
   top: 57%;
+  z-index: 10;
   width: 70%;
   height: 70vh; /* Ensure height to create a scrollable area */
   overflow: auto; /* Enable scrolling */
   left: 60%;
   transform: translate(-50%, -50%);
-  font-family: 'Soul Note Display Demo Light';
   font-optical-sizing: auto;
-  font-weight: 1000;
-  font-size: 60px;
+  font-size: 65px;
   text-transform: uppercase;
+  color: lightgray;
+  font-family: "Anton", sans-serif;
+  -webkit-text-stroke: 0.1px lightgrey; /* Creates the black outline with a 2px width */
+
 }
   .proj-title{
-    margin: 0%;
-    padding: 0px ;
-    height: 30vh;
-    color: black;
-    font-size: 55px !important;
-    font-family: 'Soul Note Display Demo Light';
+  font-family: "Anton", sans-serif;
+    color: transparent; /* Makes the inside of the text transparent */
+    -webkit-text-stroke: 0.3px lightgrey; /* Creates the black outline with a 2px width */
+  font-size: 50px !important;
     display: flex;
     flex-wrap: wrap;
     text-decoration: none;
-    direction: rtl;
-    font-weight: 900;
-    line-height: 50px;
-    letter-spacing: 3px;
-  font-weight: 1000;
+    line-height: 60px;
+    letter-spacing: 5px;
+    transform: scaleX(1.5); /* Increase the width of the letter. Adjust the value as needed */
   text-transform: uppercase;
 }
+.proj-title:hover{
+  color: lightgrey;
+}
+
 
 /* Scrollable content links styling */
 .scrollable-content a {
-  color: black;
+  color: lightgrey;
    display: flex;
   flex-wrap: wrap;
   text-decoration: none;
   direction: rtl;
-  font-weight: 900;
-  line-height: 50px;
-  letter-spacing: 2px;
+  line-height: 70px;
+  font-weight: 400 !important;
+  letter-spacing: 4px;
 }
 
 
-
 .scrollable-content a:hover {
-  color: grey;
+  color: black !important;
 }
 
 /* Hide scrollbar for WebKit browsers */
@@ -104,40 +116,58 @@
   display: none;
 }
 
-
+.herotxt{
+  margin-top: 12px;
+}
 /* Optional: hide scrollbar for Firefox */
 .scrollable-content {
   scrollbar-width: none; /* Hide scrollbar for Firefox */
 }
 
 .skillcss{
-  color: black;
+  font-family: "Urbanist", sans-serif;
+  color: lightgrey;
   position: absolute;
-  top: 67%;
-  width: 45%;
+  background-color: transparent !important;
+  top: 57%;
+  width: 55%;
   left: 70%;
-  font-size: 15px;
-  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 18px;
   transform: translate(-50%, -50%);
-  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
+.skillcss div{
+  background-color: transparent;
+  border: none !important;
+}
 .font-class{
-  font-family: 'Soul Note Display Demo Light';
-  font-weight: 620;
-  font-style: normal;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-family: "Urbanist", sans-serif;
+font-size: 50px !important;
+color: lightgrey;
+margin: 10px;
+letter-spacing: 1px;
+}
+
+.headerCss{
   font-size: 50px;
+    color: lightgrey; /* Makes the text transparent */
+    -webkit-text-stroke: 0.1px grey; 
+    border: 1px  solid black; 
 }
 span{
-  font-size: 10px;
-  font-weight: 700;
-  text-transform:none;
+  font-family: "Urbanist", sans-serif;
+  font-size: 8px;
+  font-weight: 400;
+  text-transform:none;color: lightgrey;
 }
 .ctr1 {
 width: 100%;
 margin: 0px;
 position: fixed;
-height: 100%;
+height: 100%;color: lightgrey;
 }
 
 .bg-ctr{
@@ -148,12 +178,10 @@ height: 100%;
     align-items: center;
     width: 100%;
     height: 100%;
-    background: linear-gradient(85deg, white, rgb(170, 169, 169), white, rgb(179, 182, 182), white, rgb(155, 152, 152), rgb(92, 92, 92));
-    background-size: 300% 300%;
-    animation: color 50s ease-out reverse infinite;
-    margin: 0;
-    padding: 0;
-    overflow: auto; /* Allows scrolling if content overflows */
+    font-family: "Urbanist", sans-serif;
+    background-color:black !important;
+   color: lightgrey;
+  
 }
 
 @keyframes color {
@@ -174,10 +202,17 @@ height: 100%;
   border: 1px solid black; /* Add border to the child div */
   box-sizing: border-box; /* Include border in the width and height */
   position: fixed;
-
+  border-radius: 6px;
+  background: linear-gradient(85deg,#02010a, #242423, #000000,  #333533, #000000, #252422, #000000);
+  background-size: 300% 300%;
+  animation: color 50s ease-out reverse infinite;
+  margin: 0;
+  padding: 0;
+  overflow: auto; /* Allows scrolling if content overflows */
 }
 .flex-ctre-12{
   display: flex;
+  color: lightgrey;
   height: 90%;
 }
 .ctr-1{
@@ -185,9 +220,7 @@ height: 100%;
   width: 40%;
 }
 
-.ctr-3{
-  height: 10%;
-}
+
 
 
 .body {
@@ -196,7 +229,7 @@ height: 100%;
   border: 0.2px solid black;
   margin: 20px 20px;
   height: auto;
-  width: 98%;
+  width: 97%;
 }
 .box1{
   margin-left: 20px;
@@ -205,8 +238,9 @@ height: 100%;
   margin-top: 0px;
 }
 .box1 p{
-  font-size: 16px;
+  font-size: 17px;
   margin-top: 0px;
+  color: lightgrey;
 }
 
 .box1 h2,
@@ -220,22 +254,22 @@ height: 100%;
   height: 100%;
   flex: 1;
   margin: 35px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+  font-family: "Urbanist", sans-serif;}
 
 .box2{
-  margin-top: 30px;
-  margin-left: 20px;
+  position:absolute;
+  margin-top: 10px;
+  margin-left: 0px;
 }
 .box2 a{
   text-decoration: none;
-  line-height: 1.8em;
+  line-height: 1.4rem;
   font-size: 14px;
-  color: black;
+  color: lightgrey;
 display: block;
-font-family: "Plus Jakarta Sans", sans-serif;
+letter-spacing: 1px;
 font-optical-sizing: auto;
-font-weight: 700;
+font-weight: 400;
 font-style: normal;}
 .box2 a:hover{
   color: grey;
@@ -248,24 +282,37 @@ font-style: normal;}
 }
 .line-container p {
 line-height: 1.2em;
+  gap: 45px;
  font-size: 17px; 
 }
+
+.headerCss{
+  font-size: 50px;
+    color: lightgrey; /* Makes the text transparent */
+    -webkit-text-stroke: 0.1px grey; 
+    border: 1px  solid black; 
+}
+.headerCss p:hover{
+  color: black !important;
+}
+
 .nav-btn {
+  font-family: "Urbanist", sans-serif;
   display: flex;
-  font-size: 13px;
+  font-size: 15px;
   position: absolute;
   flex-direction: row;
   margin-left: 22px;
   justify-content: space-between;
   width: 96%;
-  
 }
 
 .nav-btn div a{
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Urbanist", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 14px;
 }
 .nav-btn div {
   display: flex;
@@ -276,15 +323,16 @@ line-height: 1.2em;
 color: grey;
 }
 .nav-btn a{
-  color:black;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:lightgrey;
+  font-family: "Urbanist", sans-serif;
   text-decoration: none;
 }
 
 .gap-1{
+  font-family: "Urbanist", sans-serif;
   display: flex !important;
   position: relative;
- gap: 45px;
+  color: lightgrey;
     flex-direction: row !important; /* Align items vertically */
      /* Adjust the gap size as needed */
 }
@@ -301,5 +349,83 @@ color: grey;
   position: relative;
 }
 .about-css {
+  gap: 45px;
   margin-top: 80px;
 }
+
+/* HorizontalScroller.css */
+.scroller-container {
+    width: 90% !important;
+    height: 100vh;
+    overflow: hidden;
+}
+.CaseStudCss {
+  width: 96%;
+  overflow-x: scroll;
+}
+.scroller {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.item {
+  min-width: 100vw; /* Each item takes the full width of the viewport */
+  position: relative;
+  scroll-snap-align: start;
+  padding: 130px 60px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  z-index: 1; /* Ensure content is above the image */
+}
+
+.item img {
+  transition:  1s all ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the entire background */
+  z-index: -1; /* Send the image behind the content */
+  opacity: 0.7; /* Optional: Add transparency to the image */
+  border-radius: 8px; /* Optional: Add some border radius */
+}
+
+.item img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.top-content {
+  width: 100vh;
+  position: absolute; /* Position relative to the nearest positioned ancestor */
+  z-index: 100; /* High z-index to be on top of all other content */
+  padding: 10px;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 8px;
+}
+.ctr-3{
+  position: relative; /* Position relative to the nearest positioned ancestor */
+  z-index: 100; /* High z-index to be on top of all other content */
+  margin-left: 10px;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 8px;
+  color: lightgrey;
+  height: 10%;
+}
+
+::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}/* Hide scrollbar for Firefox */
+.scrollable {
+  scrollbar-width: none; /* Hide scrollbar */
+}
+/* Hide scrollbar for Edge and IE */
+::-ms-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+

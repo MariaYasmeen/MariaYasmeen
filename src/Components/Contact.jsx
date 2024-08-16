@@ -4,7 +4,7 @@ import React from 'react';
 const Contact = () => {
     return (
         <>
-        <div className="ctr-3">
+        <div className="ctr-3  ">
     <div className="nav-btn">
       <div className="gap-1">
         <div className="city" >
