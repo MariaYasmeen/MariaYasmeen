@@ -8,7 +8,7 @@ const Contact = () => {
     <div className="nav-btn">
       <div className="gap-1">
         <div className="city" >
-        <div>Islamabad, Pakistan</div>
+        <div style={{fontSize:"13px"}}>Islamabad, Pakistan</div>
         <a href="">mariyayasmeen000@gmail.com</a>
     </div>
     <div className="social-links">

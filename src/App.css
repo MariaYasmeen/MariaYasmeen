@@ -333,8 +333,10 @@ color: grey;
   display: flex !important;
   position: relative;
   color: lightgrey;
-    flex-direction: row !important; /* Align items vertically */
-     /* Adjust the gap size as needed */
+  flex-direction: row !important; 
+}
+.gap-1 div{
+ margin-right: 40px;
 }
 
 @media (max-width: 1084) {

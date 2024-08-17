@@ -27,7 +27,7 @@ const Projects = () => {
                     {projects.map((project) => (
                         <Link
                             key={project.name}
-                            to={`/projects/${project.name}`}
+                            to={`/work/${project.name}`}
                             className="project-link"
                         >
                             {project.name} <span>{project.description}</span>

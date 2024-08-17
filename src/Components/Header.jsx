@@ -15,7 +15,7 @@ const Header = () =>{
         <div className="box2">
     <Link to="/"><span>01</span>  About</Link>
     <Link to="/skills"><span>02</span>   Skills</Link>
-    <Link to="/projects"><span>03</span>   Projects</Link>
+    <Link to="/work"><span>03</span>   Work</Link>
     </div>
         </div>
 </div>
