@@ -41,19 +41,19 @@ Choose from different typing modes to match their skill level and goals.
                 <p>
                   
 <h2>User Typing Practice Board</h2>
-<img src="/board.png" class="img-fluid" alt="Image 7" />
+<img src="/board.png" class="img-fluid" alt="Image 7" style={{borderRadius:"10px"}} />
 
 <h2>Multiple Typing Modes</h2>
 <li>Variety of Tests: Typeathon offers different typing modes, each designed to challenge users in unique w\]\\ These modes are customizable, allowing users to select the test that best suits their needs.</li>
-<img src="/modes.png" class="img-fluid" alt="Image 7" />
+<img src="/modes.png" class="img-fluid" alt="Image 7"style={{borderRadius:"10px"}}  />
 
 <h2>Instant Feedback:</h2>
-<img src="/result.png" class="img-fluid" alt="Image 7" />
+<img src="/result.png" class="img-fluid" alt="Image 7"style={{borderRadius:"10px"}}  />
 
 
 <h2>Real-Time Results</h2>
 <li>: After each test, users receive immediate feedback on their typing speed (words per minute) and accuracy.</li>
-<img src="/score.png" alt="Image 7" class="img-fluid"/>
+<img src="/score.png" alt="Image 7" class="img-fluid" style={{borderRadius:"10px"}} />
 
 <li>Performance Metrics: The app displays detailed statistics, including the number of errors, correct words, and overall performance, which helps users identify areas for improvement.</li>
 Users receive real-time feedback on their typing speed, accuracy, and errors.
