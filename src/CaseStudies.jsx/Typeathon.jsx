@@ -33,7 +33,7 @@ function Typeathon() {
 <div class="" style={{width: "15rem"}}>
   <div class="textcard">
   <p style={{fontWeight:"800"}}>Live App 
-  <Link to= "https://typeathon.web.app" target="_blank" ><i class="fa-solid fa-link"></i>
+  <Link to= "https://typeathon.web.app" target="_blank" ><i class="fa-solid fa-link linkicon"></i>
   </Link></p>
     <p >https://typeathon.web.app</p>
     <p style={{fontWeight:"800"}}> Developer</p>
@@ -52,6 +52,23 @@ function Typeathon() {
     <p>Maria Yasmeen</p>
   </div>
                 </div>
+
+                <div class="blacktxtitem" style={{paddingLeft:"40px"}}>
+ <div class="textcard" >
+    <p style={{fontWeight:"800"}}> Design & Development</p>
+    <p><p style={{fontSize:"20px"}}>
+Design: The user interface was crafted to be clean and simple, focusing on ease of use and minimizing distractions. The choice of colors and fonts was intentional to enhance readability and user engagement.
+
+Development: The app was developed with a focus on responsiveness and performance. JavaScript was used to handle the typing test logic, while Firebase provided real-time capabilities and hosted the app.
+</p></p>
+  </div>
+  <div class="textcard" >
+    <p style={{fontWeight:"800"}}> Outcomes & Impact</p>
+    <p style={{fontSize:"20px"}}>
+    Typeathon successfully achieved its goal of providing a robust platform for improving typing skills. The app's ability to deliver instant feedback and track progress has been well-received by users. The project has also allowed me to refine my skills in web development, particularly in integrating real-time features and creating a responsive design.
+</p>
+  </div>
+  </div>
 
 
                 <div className="item">
@@ -117,25 +134,6 @@ function Typeathon() {
   </ul>
 </div>  
  </div>
-
- <div class="blacktxtitem" style={{paddingLeft:"40px"}}>
- <div class="textcard" >
-    <p style={{fontWeight:"800"}}> Design & Development</p>
-    <p><p style={{fontSize:"20px"}}>
-Design: The user interface was crafted to be clean and simple, focusing on ease of use and minimizing distractions. The choice of colors and fonts was intentional to enhance readability and user engagement.
-
-Development: The app was developed with a focus on responsiveness and performance. JavaScript was used to handle the typing test logic, while Firebase provided real-time capabilities and hosted the app.
-</p></p>
-  </div>
-  <div class="textcard" >
-    <p style={{fontWeight:"800"}}> Design & Development</p>
-    <p style={{fontSize:"20px"}}>
-    Typeathon successfully achieved its goal of providing a robust platform for improving typing skills. The app's ability to deliver instant feedback and track progress has been well-received by users. The project has also allowed me to refine my skills in web development, particularly in integrating real-time features and creating a responsive design.
-</p>
-  </div>
-  </div>
-
-  
 
                 <div className="item"><h3>Technologies Used </h3>
                 <p>
@@ -231,6 +229,8 @@ Development: The app was developed with a focus on responsiveness and performanc
                   <p>
                   Typeathon is a testament to my capability to design and develop a functional web application. It highlights my skills in creating engaging user experiences and solving real-world problems through technology. This project not only showcases my technical abilities but also my commitment to continuous learning and improvement.
                   </p>
+                  <h4 style={{float:"inline-end", marginRight:"10px"}}>Next Project</h4>
+                  <Link to="/work/M.Yasmeen"  className="project-link nextproject" >M.Yasmeen</Link>
                 </div>
             </div>
         </div>
