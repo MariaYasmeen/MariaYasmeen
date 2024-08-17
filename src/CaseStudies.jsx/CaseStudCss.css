@@ -20,17 +20,14 @@
   }
   
   .scroll-item {
-    
     flex-shrink: 0;
     width: 190px; /* Adjust the width as needed */
     height: auto; /* Adjust the height as needed */
     margin-right: 20px; /* Adjust spacing between items */
-
     box-shadow: 0 20px 20px black;
     display: flex;
   }
   .card {  
-    
     background-color:lightgrey !important;
   }
   .card-body li{
@@ -51,6 +48,7 @@
     font-size: 60px;
   font-family: "Anton", sans-serif;
   }
+
   /* Cards CSS*/
   
 * {

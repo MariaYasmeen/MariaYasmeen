@@ -20,7 +20,7 @@ const ProjectDetails = () => {
                 return <TypeathonCS />;
             // Add cases for other projects with their respective components
             default:
-                return <div>Project not found</div>;
+                return <div>Work not found</div>;
         }
     };
 
@@ -30,7 +30,12 @@ const ProjectDetails = () => {
         
 <div className="bg-ctr  ">
     <div className="bg-ctr-1">
+   
     <div className="flex-ctre-12 ">
+    <div className="item top-content">  
+
+<h1 className='workname'>{projectName}<span> / Project Analysis</span></h1>
+</div>
     <div className="box1 top-content ">
     <div className="">
         <h2 className="font-class ">Maria Yasmeen</h2>
@@ -38,25 +43,26 @@ const ProjectDetails = () => {
         <div className="box2">
     <Link to="/"><span>01</span>  About</Link>
     <Link to="/skills"><span>02</span>  Skills</Link>
-    <Link to="/projects"><span>03</span>  Work</Link>
-    </div>
+    <Link to="/work"><span>03</span>  Work</Link>
+    </div>  
         </div>
+        
 </div>
 </div>
+
 <div className="  ">
                 <Suspense fallback={<div>Loading...</div>}>
-                    {renderProjectDetails()}
-                </Suspense>
-               
+                {renderProjectDetails()}
+                </Suspense>   
             </div>
             
 <Contact />
-</div></div>
-
-<div className="herotxt">
-        <h2 className="" style={{marginTop:"10px", direction:"rtl"}}>{projectName}<span>  / Project Analysis  </span></h2>
 
 </div>
+
+</div>
+
+
           
         </>
     );

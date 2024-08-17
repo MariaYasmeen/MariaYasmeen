@@ -7,7 +7,7 @@ const Projects = () => {
     const projects = [
         { name: 'Typeathon', description: 'Speed Typing Test App | 2024' },
         { name: 'M.Yasmeen', description: 'Clothing Store | 2024' },
-        { name: 'travel pakistan', description: 'Pakistan Travel Guide | 2024' },
+        { name: 'travelpakistan', description: 'Pakistan Travel Guide | 2024' },
         { name: 'CrypTrack', description: 'Crypto Currency Live Tracking | 2024' },
         { name: 'Homedashboard', description: 'Commission 2024' },
         { name: 'History book', description: 'Commission 2024' },

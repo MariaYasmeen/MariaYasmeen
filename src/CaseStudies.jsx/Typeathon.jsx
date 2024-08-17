@@ -7,8 +7,10 @@ function Typeathon() {
     <>
  <div className="CaseStudCss "> 
  <div className=" ">
-                <div className="item">
-                
+
+
+
+                <div className="item">  
 <img src='/typeathon1.png' className='item-img'/>
                   </div>
                 <div className="item" style={{backgroundColor:"black"}}>
