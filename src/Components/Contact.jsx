@@ -4,7 +4,7 @@ import React from 'react';
 const Contact = () => {
     return (
         <>
-        <div className="ctr-3  ">
+        <div className="contactbar  ">
     <div className="nav-btn">
       <div className="gap-1">
         <div className="city" >
@@ -17,7 +17,7 @@ const Contact = () => {
     </div>
     </div>
     <div className="CV-gap">
-    <a href="resume"><span>06</span> Resume/CV</a>
+    <a href="resume"><span>06</span> Resume</a>
     </div>
     </div>
     </div>

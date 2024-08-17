@@ -65,10 +65,10 @@ font-size: 17px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 78%;
-  height: 96vh; /* Ensure height to create a scrollable area */
+  width: 87%;
+  height: 94vh; /* Ensure height to create a scrollable area */
   overflow: auto; /* Enable scrolling */
-  left: 60%;
+  left: 50%;
   transform: translate(-50%, -50%);
   font-optical-sizing: auto;
   font-family: "Anton", sans-serif;
@@ -139,14 +139,14 @@ font-size: 17px;
   letter-spacing: 2px;
    display: flex;
   flex-wrap: wrap;
-  font-size: 90px;
+  font-size: 110px;
   text-transform: uppercase;
   text-decoration: none;
   -webkit-text-stroke: 0.3px white; /* Creates the black outline with a 2px width */
   direction: rtl; text-shadow: 1px 20px  20px 20px rgba(0, 0, 0, 0.5) !important;
   transform: perspective(500px) rotateX(38deg) scale(1.3);
  transition: 0.5s all ease;
-  line-height: 93px;
+  line-height: 110px;
   letter-spacing: 2px;
 }
 
@@ -174,11 +174,11 @@ font-size: 17px;
   color: lightgrey;
   position: absolute;
   background-color: transparent !important;
-  top: 57%;
+  top: 60%;
   width: 55%;
-  left: 70%;
-  letter-spacing: 0.5px;
-  font-size: 18px;
+  left: 85%;
+  letter-spacing: 1px;
+  font-size: 14px !important;
   transform: translate(-50%, -50%);
 }
 
@@ -194,6 +194,11 @@ font-size: 50px !important;
 color: lightgrey;
 margin: 10px;
 letter-spacing: 1px;
+}
+
+.cart{
+  background-color: #fff;
+  padding: 4vh 5vh;
 }
 
 .headerCss{
@@ -248,7 +253,7 @@ height: 100%;color: lightgrey;
   box-sizing: border-box; /* Include border in the width and height */
   position: fixed;
   border-radius: 6px;
-  background: linear-gradient(85deg,#02010a, #242423, #000000,  #333533, #000000, #252422, #000000);
+  background: linear-gradient(85deg,#02010a, #242423,  #333533, #000000, #252422, #000000);
   background-size: 300% 300%;
   animation: color 50s ease-out reverse infinite;
   margin: 0;
@@ -321,6 +326,7 @@ font-style: normal;}
 }
 
 
+
 .line-container h2 {
   font-size: 3.9em; 
   line-height: 0.8em;
@@ -343,7 +349,7 @@ line-height: 1.2em;
 
 .nav-btn {
   font-family: "Urbanist", sans-serif;
-  display: flex;
+ display: flex;
   font-size: 15px;
   position: absolute;
   flex-direction: row;
@@ -351,7 +357,9 @@ line-height: 1.2em;
   justify-content: space-between;
   width: 96%;
 }
-
+.Navbardropdown{
+  display: none;
+}
 .nav-btn div a{
   font-family: "Urbanist", sans-serif;
   font-optical-sizing: auto;
@@ -371,6 +379,56 @@ color: grey;
   color:lightgrey;
   font-family: "Urbanist", sans-serif;
   text-decoration: none;
+}
+@media(max-width:983px){
+  .font-class{
+      font-size: 45px !important ;
+  }
+  .nav-btn{
+    margin-left: 10px;
+  }
+  .box2 a{
+    font-size: 12px;
+  }
+  .nav-btn div a{
+    font-size: 12px;
+  }
+  .skillcss{
+     left: 78%;
+  }
+  .scrollable-content a {
+    letter-spacing: 2px; 
+    font-size: 80px;
+    line-height: 89px;
+  }
+}
+
+@media(max-width:500px){
+  .font-class{
+    font-size: 28px !important ;
+}
+.box2 {
+  display: none;
+ }
+.skillcss {
+  font-size: 15px;
+}
+ .CV-gap a{
+  display: none;
+ }
+ .Navbardropdown{
+   display:contents;
+ }
+ .skillcss{
+  left: 60%;
+  font-size: 13px !important;
+}
+}
+@media(max-width:350px){
+
+  .nav-btn div a{
+    font-size: 10px;
+  }
 }
 
 .gap-1{
@@ -460,9 +518,12 @@ color: grey;
   text-shadow:  10px 10px 20px black !important;
   border-radius: 8px;
   color: lightgrey;
-  height: 10%;
+  height: 15%;
 }
+.contactbar{
+  top: 60px;
 
+}
 ::-webkit-scrollbar {
   display: none; /* Hide scrollbar */
 }/* Hide scrollbar for Firefox */

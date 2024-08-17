@@ -5,6 +5,8 @@ import './Pages.css';
 
 const Projects = () => {
     const projects = [
+        { name: '', description: "" },
+        { name: '', description: "" },
         { name: 'Typeathon', description: 'Speed Typing Test App | 2024' },
         { name: 'M.Yasmeen', description: 'Clothing Store | 2024' },
         { name: 'travelpakistan', description: 'Pakistan Travel Guide | 2024' },
@@ -22,8 +24,16 @@ const Projects = () => {
     return (
         <>
             <Header />
-            <div className="">
-                <div className="scrollable-content">
+            <div className="" >
+                <div className="scrollable-content" >
+                    <div className="" style={{color:"transparent"}}>
+                        <p>djhdb</p>
+                        <p>dkhvhdb</p>
+                        <p>dkhvhdb</p>
+                        <p>dkhvdb</p>
+                        <p>dkhvhdb</p>
+                    </div>
+                <Link to="" className="project-link" > </Link>
                     {projects.map((project) => (
                         <Link
                             key={project.name}
@@ -33,6 +43,12 @@ const Projects = () => {
                             {project.name} <span>{project.description}</span>
                         </Link>
                     ))}
+                     <div className="" style={{color:"transparent"}}>
+                        <p>djhdb</p>
+                        <p>dkhvhdb</p>
+                        <p>dkhvhdb</p>
+                        <p>dkhvhdb</p>
+                    </div>
                 </div>
             </div>
         </>
