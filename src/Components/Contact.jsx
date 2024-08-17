@@ -11,7 +11,7 @@ const Contact = () => {
         <div style={{fontSize:"13px"}}>Islamabad, Pakistan</div>
         <a href="">mariyayasmeen000@gmail.com</a>
     </div>
-    <div className="social-links">
+    <div className="social-links" style={{marginLeft:"40px"}} > 
     <a href=""><span>04</span> instagram</a>
     <a href=""><span>05</span> linkedin</a>
     </div>

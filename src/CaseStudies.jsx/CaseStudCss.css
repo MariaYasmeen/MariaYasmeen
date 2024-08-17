@@ -111,8 +111,14 @@ body {
 .card p{
     padding: 5px 0;
 }
-.blacktxtitem h3 p{
-  color: #000 !important;
+.blacktxtitem {
+ display: flex;
+}
+.blacktxtitem div{
+  padding: 20px;
+}
+.typeimage{
+  margin-left:100px ;
 }
 
 /*Comparing Cards*/
@@ -187,17 +193,20 @@ html {
   font-size:15px;
 }
 
-
-/* 7 Image Css*/
-.image-frame {
+.heading1{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  margin: 5px;
+  padding: 40px;
 }
-.image-frame img{
-  width: 230px;
-  margin: 3px;
+.heading1 p{
+  font-size: 15px;
 }
 
+.fa-solid{
+  color: white;
+  font-size: 17px;
+  margin-left: 7px;
+}
+.heading1  div{
+  padding: 10px;
+  width: auto;
+}

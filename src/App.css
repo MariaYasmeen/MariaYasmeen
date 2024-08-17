@@ -432,6 +432,7 @@ color: grey;
   margin-left: 10px;
   color: #fff;
   font-size: 2rem;
+  text-shadow:  10px 10px 20px black !important;
   border-radius: 8px;
   color: lightgrey;
   height: 10%;

@@ -1,5 +1,7 @@
 // import React from 'react';
 import './CaseStudCss.css';
+import { Link } from 'react-router-dom';
+
 
 function Typeathon() {
 
@@ -13,63 +15,44 @@ function Typeathon() {
                 <div className="item">  
 <img src='/typeathon1.png' className='item-img'/>
                   </div>
-                <div className="item" style={{backgroundColor:"black"}}>
-                  <div className="heading1">
-                    <p  style={{textTransform:"uppercase", fontSize:"27px", flex:'none'}}>
-                Developed to provide users with various customizeable modes to practice and evaluate their typing performance in real-time.
-                </p>
+                <div className="" style={{backgroundColor:"black"}}>
+                  <div className="heading1" >
+ <div class="" style={{width: "43rem"}}>
+  <div class="textcard">
+    <h3 style={{ fontSize:"23px"}}>Typeathon is a speed typing web app to enhance user's typing speed effectively.</h3>
+    <p class="">This website was designed to improve user's typing speed and accuracy. Where user can track their typing performance with instant feedback, choose from different customizable typing modes to match their skill level and goals.</p>
+  </div>
+</div>
+<div class="" style={{width: "45rem"}}>
+  <div class="textcard">
+   
+    <p class="">Multiple Typing Modes each designed to challenge users in unique. These modes are customizable, allowing users to select the test that best suits their needs.</p>
+   
+  </div>
+</div>
+<div class="" style={{width: "15rem"}}>
+  <div class="textcard">
+  <p style={{fontWeight:"800"}}>Live App 
+  <Link to= "https://typeathon.web.app" target="_blank" ><i class="fa-solid fa-link"></i>
+  </Link></p>
+    <p >https://typeathon.web.app</p>
+    <p style={{fontWeight:"800"}}> Developer</p>
+    <p>Maria Yasmeen</p>
+  </div>
+</div>
                   </div>
                 </div>
-                <div className="item"> <h3>Key Objectives </h3>
-                <p>
-The primary objective of Typeathon is to offer users a platform where they can:
 
-Improve their typing speed and accuracy.
-Track their typing performance with instant feedback.
-Choose from different typing modes to match their skill level and goals.
-</p>
-<p>
-The main objective of Typeathon is to help users improve their typing speed and accuracy in a fun and interactive way. The application aims to provide instant feedback and detailed performance metrics to keep users engaged and motivated. Additionally, it allows users to store and review their scores, making it a valuable tool for those looking to improve their typing skills over time.
-</p>
-<h2>Fundamental Feature</h2>
-<p>
-The primary objective of Typeathon is to offer users a platform where they can:
- typing performance with instant feedback.
-Choose from different typing modes to match their skill level and goals.
-</p>
+     <div  className=" blacktxtitem" >
+      <div className="typeimage">
+     <img src="/type2.png" class="img-fluid" alt="" style={{width:"850px"}} />
+     </div>
+     <div class="textcard">
+    <p style={{fontWeight:"800"}}> Developer</p>
+    <p>Maria Yasmeen</p>
+  </div>
                 </div>
-                <div  className="item blacktxtitem" >
-                  <h3>Key Features </h3>
-                <p>
-                  
-<h2>User Typing Practice Board</h2>
-<img src="/board.png" class="img-fluid" alt="Image 7" style={{borderRadius:"10px"}} />
 
-<h2>Multiple Typing Modes</h2>
-<li>Variety of Tests: Typeathon offers different typing modes, each designed to challenge users in unique w\]\\ These modes are customizable, allowing users to select the test that best suits their needs.</li>
-<img src="/modes.png" class="img-fluid" alt="Image 7"style={{borderRadius:"10px"}}  />
-
-<h2>Instant Feedback:</h2>
-<img src="/result.png" class="img-fluid" alt="Image 7"style={{borderRadius:"10px"}}  />
-
-
-<h2>Real-Time Results</h2>
-<li>: After each test, users receive immediate feedback on their typing speed (words per minute) and accuracy.</li>
-<img src="/score.png" alt="Image 7" class="img-fluid" style={{borderRadius:"10px"}} />
-
-<li>Performance Metrics: The app displays detailed statistics, including the number of errors, correct words, and overall performance, which helps users identify areas for improvement.</li>
-Users receive real-time feedback on their typing speed, accuracy, and errors.
-Performance metrics are displayed immediately after completing a test.
-User-Friendly Interface:
-
-Clean and intuitive design ensuring a seamless user experience.
-Responsive layout for compatibility across devices.
-Performance Tracking:
-
-Users can track their progress over time.
-Historical performance data is accessible for continuous improvement.
-</p>
-                </div>
 
                 <div className="item">
                   <h3>Challenges VS Solutions VS Results</h3>
@@ -116,7 +99,6 @@ Historical performance data is accessible for continuous improvement.
     </li>
     <li class="c-cards_item">
       <div class="c-card">
-        {/* <div class="c-card_image"><img src="https://assets.codepen.io/652/photo-1520174691701-bc555a3404ca.jpeg" alt="a Reuben sandwich on wax paper. " /></div> */}
         <div class="c-card_content" >
           <h2 class="c-card_title" style={{backgroundColor:"lightblue"}}> <i className="fa-solid fa-chart-line" title="Results" />Results</h2>
           <div class="c-card_text">
@@ -136,6 +118,24 @@ Historical performance data is accessible for continuous improvement.
 </div>  
  </div>
 
+ <div class="blacktxtitem" style={{paddingLeft:"40px"}}>
+ <div class="textcard" >
+    <p style={{fontWeight:"800"}}> Design & Development</p>
+    <p><p style={{fontSize:"20px"}}>
+Design: The user interface was crafted to be clean and simple, focusing on ease of use and minimizing distractions. The choice of colors and fonts was intentional to enhance readability and user engagement.
+
+Development: The app was developed with a focus on responsiveness and performance. JavaScript was used to handle the typing test logic, while Firebase provided real-time capabilities and hosted the app.
+</p></p>
+  </div>
+  <div class="textcard" >
+    <p style={{fontWeight:"800"}}> Design & Development</p>
+    <p style={{fontSize:"20px"}}>
+    Typeathon successfully achieved its goal of providing a robust platform for improving typing skills. The app's ability to deliver instant feedback and track progress has been well-received by users. The project has also allowed me to refine my skills in web development, particularly in integrating real-time features and creating a responsive design.
+</p>
+  </div>
+  </div>
+
+  
 
                 <div className="item"><h3>Technologies Used </h3>
                 <p>
@@ -162,6 +162,7 @@ Historical performance data is accessible for continuous improvement.
     </div>
 </div>
         </div>
+
         <div className="scroll-item">
         <div class="card" style={{width: "18rem"}}>
   <div class="card-body">
@@ -223,21 +224,7 @@ Historical performance data is accessible for continuous improvement.
       </div>
     </div>
                 </div>
-                <div className="item"  style={{backgroundColor:"#1f140d", color:"black", borderRadius:"10px"}}><h3>Design & Development</h3>
-                <p>
-Design: The user interface was crafted to be clean and simple, focusing on ease of use and minimizing distractions. The choice of colors and fonts was intentional to enhance readability and user engagement.
-
-Development: The app was developed with a focus on responsiveness and performance. JavaScript was used to handle the typing test logic, while Firebase provided real-time capabilities and hosted the app.
-</p> 
-                </div>
-              
-
-                <div className="item">
-                  <h3>Outcomes & Impact</h3>
-                  <p>
-                  Typeathon successfully achieved its goal of providing a robust platform for improving typing skills. The app's ability to deliver instant feedback and track progress has been well-received by users. The project has also allowed me to refine my skills in web development, particularly in integrating real-time features and creating a responsive design.
-                  </p>
-                </div>
+  
 
                 <div className="item">
                   <h3>Conclusion</h3>
