@@ -37,7 +37,7 @@ function About() {
  <Header/>
     <div className="skillcss" style={{marginLeft:"auto", width:"210px", fontSize:"14px"}}> 
    <motion.p
-     initial={{ opacity: 0, y: 10 }}  // Start with text below and invisible
+     initial={{ opacity: 0, y: 5 }}  // Start with text below and invisible
      animate={{ opacity: 1, y: 0 }}  // End with text at its final position and visible
      transition={{ duration: 0.9, ease: "easeOut" }}  // Smooth transition
      style={{ overflow: 'hidden', width: "15rem"}} 
