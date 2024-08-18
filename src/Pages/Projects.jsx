@@ -1,12 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../Components/Header';
+import { Helmet } from 'react-helmet-async';
 import './Pages.css';
 
 const Projects = () => {
     const projects = [
-        { name: '', description: "" },
-        { name: '', description: "" },
         { name: 'Typeathon', description: 'Speed Typing Test App | 2024' },
         { name: 'M.Yasmeen', description: 'Clothing Store | 2024' },
         { name: 'merapakistan', description: 'Pakistan Travel Guide | 2024' },
@@ -23,6 +22,10 @@ const Projects = () => {
 
     return (
         <>
+         <Helmet>
+        <title>Work - Maria Yasmeen</title>
+        <meta name="description" content="Browse through my most recent work in dev and design industry." />
+      </Helmet>
             <Header />
             <div className="" >
                 <div className="scrollable-content" >

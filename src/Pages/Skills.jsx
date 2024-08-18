@@ -1,9 +1,14 @@
 import Header from "../Components/Header";
 import React from 'react';
+import { Helmet } from "react-helmet-async";
 
 const Skills = () => {
     return (
         <>
+        <Helmet>
+        <title>Skills - Maria Yasmeen</title>
+        <meta name="description" content="Highlighting my core competencies." />
+      </Helmet>
      <Header />
      <div className="skillcss" style={{marginLeft:"auto",  width:"210px", fontSize:"14px", lineHeight:"0.2px"}}> 
      <div class="" style={{width: "15rem"}}>

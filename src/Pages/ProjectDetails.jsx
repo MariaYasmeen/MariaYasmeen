@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import Contact from '../Components/Contact';
 import { Link } from 'react-router-dom';
 import './Pages.css';
-import Header from '../Components/Header';
+import { Helmet } from 'react-helmet-async';
 
 // Lazy load the components
 const TypeathonCS = React.lazy(() => import('../CaseStudies.jsx/Typeathon'));
@@ -26,7 +26,10 @@ const ProjectDetails = () => {
 
     return (
         <>
-
+      <Helmet>
+        <title>{projectName} - Project Analysis - Maria Yasmeen</title>
+        <meta name="description" content={`Know the Projcet Analysis for ${projectName}.`} />
+      </Helmet>
         
 <div className="bg-ctr  ">
     <div className="bg-ctr-1">
