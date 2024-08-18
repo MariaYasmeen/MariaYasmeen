@@ -4,6 +4,7 @@ import Contact from '../Components/Contact';
 import { Link } from 'react-router-dom';
 import './Pages.css';
 import { Helmet } from 'react-helmet-async';
+import LoadingPage from './LoadingPage';
 
 // Lazy load the components
 const TypeathonCS = React.lazy(() => import('../CaseStudies.jsx/Typeathon'));
@@ -26,9 +27,9 @@ const ProjectDetails = () => {
 
     return (
         <>
-      <Helmet>
+        <Helmet>
         <title>{projectName} - Project Analysis - Maria Yasmeen</title>
-        <meta name="description" content={`Know the Projcet Analysis for ${projectName}.`} />
+        <meta name="description" content={`Know the Project Analysis for ${projectName}.`} />
       </Helmet>
         
 <div className="bg-ctr  ">
@@ -54,7 +55,7 @@ const ProjectDetails = () => {
 </div>
 
 <div className="  ">
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<LoadingPage />}>
                 {renderProjectDetails()}
                 </Suspense>   
             </div>

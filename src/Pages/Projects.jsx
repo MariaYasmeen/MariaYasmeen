@@ -32,7 +32,6 @@ const Projects = () => {
                     <div className="" style={{color:"transparent"}}>
                         <p>djhdb</p>
                         <p>dkhvhdb</p>
-                        <p>dkhvhdb</p>
                         <p>dkhvdb</p>
                         <p>dkhvhdb</p>
                     </div>

@@ -17,7 +17,7 @@ const Contact = () => {
     </div>
     </div>
     <div className="CV-gap ">
-    <a href="resume"><span>06</span> Resume/CV</a>
+    <a href="resume"><span>06</span> Resume</a>
     </div>
     </div>
     </div>
