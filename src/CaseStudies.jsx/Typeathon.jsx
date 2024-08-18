@@ -25,9 +25,7 @@ function Typeathon() {
 </div>
 <div class="" style={{width: "45rem"}}>
   <div class="textcard">
-   
     <p class="">Multiple Typing Modes each designed to challenge users in unique. These modes are customizable, allowing users to select the test that best suits their needs.</p>
-   
   </div>
 </div>
 <div class="" style={{width: "15rem"}}>
@@ -68,77 +66,10 @@ Development: The app was developed with a focus on responsiveness and performanc
     Typeathon successfully achieved its goal of providing a robust platform for improving typing skills. The app's ability to deliver instant feedback and track progress has been well-received by users. The project has also allowed me to refine my skills in web development, particularly in integrating real-time features and creating a responsive design.
 </p>
   </div>
-  </div>
-
-
-                <div className="item">
-                  <h3>Challenges VS Solutions VS Results</h3>
-                  <div class="main">
-  <ul class="comparecards">
-    <li class="c-cards_item">
-      <div class="c-card">
-        {/* <div class="c-card_image"><img src="https://assets.codepen.io/652/photo-1468777675496-5782faaea55b.jpeg" alt="mixed vegetable salad in a mason jar. " /></div> */}
-        <div class="c-card_content">
-          <h2 class="c-card_title" style={{backgroundColor:"gold"}}><i class="fa-solid fa-triangle-exclamation"></i>Challenges</h2>
-          <div class="c-card_text">
-            <p>I kept writing almost identical code to print different statements in multiple places.</p>
-          <p>I found myself writing the same function over and over again in different components.</p>
-           <p>Passing data down multiple component levels via props was hard to manage.</p>
-           <p> Fetching data quickly without slowing the app was challenging.</p>
-         
-            <p>Ensuring accurate real-time performance tracking.</p>
-          <p>Designing a user-friendly interface for different skill levels.</p>
-          <p> As the app expanded, keeping the codebase modular and clean started to become difficult.</p>
-             
-            </div>
-        </div>
-      </div>
-    </li>
-
-    <li class="c-cards_item">
-      <div class="c-card">
-        {/* <div class="c-card_image"><img src="https://assets.codepen.io/652/photo-1520174691701-bc555a3404ca.jpeg" alt="a Reuben sandwich on wax paper. " /></div> */}
-        <div class="c-card_content" >
-          <h2 class="c-card_title" style={{backgroundColor:"pink"}}><i className="fa-solid fa-lightbulb" title="Solutions" />Solutions</h2>
-          <div class="c-card_text">
-            <p> I used the map function to loop through an array and generate the statements dynamically.</p>
-          <p>I extracted the common function into a separate utility file and imported it wherever needed. 
-          </p>
-           <p>I implemented the Context API to provide and consume data across component.
-           </p>
-           <p>I utilized useEffect for data fetching and loading states.</p>
-            <p>Implemented efficient algorithms to measure typing speed and accuracy.</p>
-            <p>Created various modes with adjustable difficulty. </p>
-            <p>I focused on creating smaller, reusable components and functions, ensuring that each piece of code had a single responsibility.</p>
-               </div>
-        </div>
-      </div>
-    </li>
-    <li class="c-cards_item">
-      <div class="c-card">
-        <div class="c-card_content" >
-          <h2 class="c-card_title" style={{backgroundColor:"lightblue"}}> <i className="fa-solid fa-chart-line" title="Results" />Results</h2>
-          <div class="c-card_text">
-            <p>This made the code cleaner and more efficient.</p>
-          <p style={{marginTop:"2.5em"}}>This reduced redundancy and made the code easier to maintain.</p>
-           <p style={{marginTop:"2.4em"}}>It streamlined data flow and made state management much simpler.</p>
-           <p>Data was loaded asynchronously and the UI remained responsive.</p>
-            <p>As a result Web App got optimized for performance.</p>
-            <p>User got exciting customization options to cater. </p>
-            <p> This made the app easier to maintain and extend in the future.</p>
-               </div>
-        </div>
-      </div>
-    </li>
-  
-  </ul>
-</div>  
- </div>
-
-                <div className="item"><h3>Technologies Used </h3>
-                <p>
-</p>
-<div className="txtscroll">
+ 
+  <div className="txtscroll">
+  <p style={{fontWeight:"800"}}> Technologies Used</p>
+   
       <div className="scroll-content">
         <div className="scroll-item">
         <div class="card" style={{width: "18rem"}}>
@@ -221,8 +152,73 @@ Development: The app was developed with a focus on responsiveness and performanc
         </div>
       </div>
     </div>
-                </div>
+
+  </div>
+
+
+                <div className="item">
+                  <h3>Challenges VS Solutions VS Results</h3>
+                  <div class="main">
+  <ul class="comparecards">
+    <li class="c-cards_item">
+      <div class="c-card">
+        {/* <div class="c-card_image"><img src="https://assets.codepen.io/652/photo-1468777675496-5782faaea55b.jpeg" alt="mixed vegetable salad in a mason jar. " /></div> */}
+        <div class="c-card_content">
+          <h2 class="c-card_title" style={{backgroundColor:"gold"}}><i class="fa-solid fa-triangle-exclamation"></i>Challenges</h2>
+          <div class="c-card_text">
+            <p>I kept writing almost identical code to print different statements in multiple places.</p>
+          <p>I found myself writing the same function over and over again in different components.</p>
+           <p>Passing data down multiple component levels via props was hard to manage.</p>
+           <p> Fetching data quickly without slowing the app was challenging.</p>
+         
+            <p>Ensuring accurate real-time performance tracking.</p>
+          <p>Designing a user-friendly interface for different skill levels.</p>
+          <p> As the app expanded, keeping the codebase modular and clean started to become difficult.</p>
+             
+            </div>
+        </div>
+      </div>
+    </li>
+
+    <li class="c-cards_item">
+      <div class="c-card">
+        {/* <div class="c-card_image"><img src="https://assets.codepen.io/652/photo-1520174691701-bc555a3404ca.jpeg" alt="a Reuben sandwich on wax paper. " /></div> */}
+        <div class="c-card_content" >
+          <h2 class="c-card_title" style={{backgroundColor:"pink"}}><i className="fa-solid fa-lightbulb" title="Solutions" />Solutions</h2>
+          <div class="c-card_text">
+            <p> I used the map function to loop through an array and generate the statements dynamically.</p>
+          <p>I extracted the common function into a separate utility file and imported it wherever needed. 
+          </p>
+           <p>I implemented the Context API to provide and consume data across component.
+           </p>
+           <p>I utilized useEffect for data fetching and loading states.</p>
+            <p>Implemented efficient algorithms to measure typing speed and accuracy.</p>
+            <p>Created various modes with adjustable difficulty. </p>
+            <p>I focused on creating smaller, reusable components and functions, ensuring that each piece of code had a single responsibility.</p>
+               </div>
+        </div>
+      </div>
+    </li>
+    <li class="c-cards_item">
+      <div class="c-card">
+        <div class="c-card_content" >
+          <h2 class="c-card_title" style={{backgroundColor:"lightblue"}}> <i className="fa-solid fa-chart-line" title="Results" />Results</h2>
+          <div class="c-card_text">
+            <p>This made the code cleaner and more efficient.</p>
+          <p style={{marginTop:"2.5em"}}>This reduced redundancy and made the code easier to maintain.</p>
+           <p style={{marginTop:"2.4em"}}>It streamlined data flow and made state management much simpler.</p>
+           <p>Data was loaded asynchronously and the UI remained responsive.</p>
+            <p>As a result Web App got optimized for performance.</p>
+            <p>User got exciting customization options to cater. </p>
+            <p> This made the app easier to maintain and extend in the future.</p>
+               </div>
+        </div>
+      </div>
+    </li>
   
+  </ul>
+</div>  
+ </div>
 
                 <div className="item">
                   <h3>Conclusion</h3>
