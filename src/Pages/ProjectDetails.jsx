@@ -55,6 +55,7 @@ const ProjectDetails = () => {
 </div>
 
 <div className="  ">
+    
                 <Suspense fallback={<LoadingPage />}>
                 {renderProjectDetails()}
                 </Suspense>   

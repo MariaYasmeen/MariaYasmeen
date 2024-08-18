@@ -2,6 +2,7 @@
 import React, {useState, useEffect} from 'react';
 import Header from "../Components/Header";
 import { Helmet } from 'react-helmet-async';
+import { motion } from 'framer-motion';
 import LoadingPage from './LoadingPage';
 const LOADING_SCREEN_KEY = 'showLoadingScreen';
 
@@ -35,7 +36,13 @@ function About() {
       <>
  <Header/>
     <div className="skillcss" style={{marginLeft:"auto", width:"210px", fontSize:"14px"}}> 
-   <p>Frontend Developer from Islamabad, I transform my ideas into code, making dynamic, responsive, and interactive web designs. I am confident that Web Designing and Development can be more different and impactful. Learning new models through observations and experiments.</p>
+   <motion.p
+     initial={{ opacity: 0, y: 10 }}  // Start with text below and invisible
+     animate={{ opacity: 1, y: 0 }}  // End with text at its final position and visible
+     transition={{ duration: 0.9, ease: "easeOut" }}  // Smooth transition
+     style={{ overflow: 'hidden', width: "15rem"}} 
+   >Frontend Developer from Islamabad, I transform my ideas into code, making dynamic, responsive, and interactive web designs. I am confident that Web Designing and Development can be more different and impactful. Learning new models through observations and experiments.
+   </motion.p>
      </div> 
       </>
       }

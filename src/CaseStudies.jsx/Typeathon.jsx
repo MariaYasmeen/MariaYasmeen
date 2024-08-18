@@ -1,5 +1,6 @@
 // import React from 'react';
 import './CaseStudCss.css';
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 
@@ -9,14 +10,16 @@ function Typeathon() {
     <>
  <div className="CaseStudCss "> 
  <div className=" ">
-
-
-
                 <div className="item">  
-<img src='/typeathon1.png' className='item-img'/>
+<img src='/bgimg.jpg' className='item-img'/>
                   </div>
                 <div className="" style={{backgroundColor:"black"}}>
-                  <div className="heading1" >
+                <motion.div
+      initial={{ opacity: 0, y: 20 }}  // Start with text below and invisible
+      animate={{ opacity: 1, y: 0 }}  // End with text at its final position and visible
+      transition={{ duration: 0.8, ease: "easeOut" }}  // Smooth transition
+      style={{ overflow: 'hidden' }} // Optional: To ensure text stays within container
+                   className="heading1" >
  <div class="" style={{width: "43rem"}}>
   <div class="textcard">
     <h3 style={{ fontSize:"23px"}}>Typeathon is a speed typing web app to enhance user's typing speed effectively.</h3>
@@ -38,7 +41,7 @@ function Typeathon() {
     <p>Maria Yasmeen</p>
   </div>
 </div>
-                  </div>
+                  </motion.div>
                 </div>
 
      <div  className=" blacktxtitem" >
@@ -51,7 +54,12 @@ function Typeathon() {
   </div>
                 </div>
 
-                <div class="blacktxtitem" style={{paddingLeft:"40px"}}>
+                <motion.div
+      initial={{ opacity: 0, y: 20 }}  // Start with text below and invisible
+      animate={{ opacity: 1, y: 0 }}  // End with text at its final position and visible
+      transition={{ duration: 0.9, ease: "easeOut" }}  // Smooth transition
+      style={{ overflow: 'hidden', paddingLeft:"40px" }} 
+                class="blacktxtitem" >
  <div class="textcard" >
     <p style={{fontWeight:"800"}}> Design & Development</p>
     <p><p style={{fontSize:"20px"}}>
@@ -153,8 +161,7 @@ Development: The app was developed with a focus on responsiveness and performanc
       </div>
     </div>
 
-  </div>
-
+</motion.div>
 
                 <div className="item">
                   <h3>Challenges VS Solutions VS Results</h3>

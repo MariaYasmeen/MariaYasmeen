@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../Components/Header';
+import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import './Pages.css';
+import { easeInOut } from 'framer-motion/dom';
 
 const Projects = () => {
     const projects = [
@@ -20,6 +22,26 @@ const Projects = () => {
         { name: 'Pizza hut', description: 'UI Project' },
     ];
 
+    const textVariant = {
+        hidden: { 
+          opacity: 0, 
+          y: 40, 
+          rotateX: 40, // Tilted from the top
+          skewY: -10,   // Bent effect
+        },
+        visible: { 
+          opacity: 1, 
+          y: 5, 
+    rotateX: -5, 
+    skewY: -1, 
+    transition: { 
+      duration: 1, 
+      ease:"easeInOut",
+    }
+  }
+};
+
+
     return (
         <>
          <Helmet>
@@ -28,14 +50,22 @@ const Projects = () => {
       </Helmet>
             <Header />
             <div className="" >
-                <div className="scrollable-content" >
+         
+                <motion.div className="scrollable-content"   style={{ display: 'inline-block' }}  
+ >
                     <div className="" style={{color:"transparent"}}>
                         <p>djhdb</p>
                         <p>dkhvhdb</p>
                         <p>dkhvdb</p>
                         <p>dkhvhdb</p>
                     </div>
-                <Link to="" className="project-link" > </Link>
+                    <motion.div
+                 initial="hidden"
+                 animate="visible"
+                 variants={textVariant}
+                 style={{ display: 'inline-block' }} // Maintain original CSS styling
+                  >
+
                     {projects.map((project) => (
                         <Link
                             key={project.name}
@@ -45,13 +75,14 @@ const Projects = () => {
                             {project.name} <span>{project.description}</span>
                         </Link>
                     ))}
+                    </motion.div>
                      <div className="" style={{color:"transparent"}}>
                         <p>djhdb</p>
                         <p>dkhvhdb</p>
                         <p>dkhvhdb</p>
                         <p>dkhvhdb</p>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </>
     );

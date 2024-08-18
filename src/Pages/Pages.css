@@ -40,3 +40,22 @@
     font-size: 1.4rem;
   }
   
+  /*Soft animation*/
+  /* Container with overflow hidden to ensure the text starts hidden */
+.container {
+  overflow: hidden;
+  height: 100px; /* Adjust height as needed */
+}
+
+/* Initial state of the animated text */
+.animated-text {
+  opacity: 0; /* Start invisible */
+  transform: translateY(20px); /* Start below its final position */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Smooth transition */
+}
+
+/* Add this class to trigger the animation */
+.container.show .animated-text {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Move to its final position */
+}

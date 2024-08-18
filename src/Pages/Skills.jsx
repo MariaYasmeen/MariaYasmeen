@@ -1,5 +1,6 @@
 import Header from "../Components/Header";
 import React from 'react';
+import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 
 const Skills = () => {
@@ -10,11 +11,16 @@ const Skills = () => {
         <meta name="description" content="Highlighting my core competencies." />
       </Helmet>
      <Header />
-     <div className="skillcss" style={{marginLeft:"auto",  width:"210px", fontSize:"14px", lineHeight:"0.2px"}}> 
-     <div class="" style={{width: "15rem"}}>
-  <h5 style={{fontWeight:"800"}}>Languages</h5>
-    <p> HTML, CSS, Javascript</p>
-
+     <div className="skillcss" style={{marginLeft:"auto",  width:"210px", fontSize:"14px", lineHeight:"1px"}}> 
+         <motion.div
+         initial={{ opacity: 0, y: 10 }}  // Start with text below and invisible
+         animate={{ opacity: 1, y: 0 }}  // End with text at its final position and visible
+         transition={{ duration: 0.9, ease: "easeOut" }}  // Smooth transition
+         style={{ overflow: 'hidden', width: "15rem"}} 
+>
+<h5 style={{fontWeight:"800"}}>Languages</h5>
+    <p> HTML, CSS, SCSS,  Javascript</p>
+    <p> TypeScript React JS</p>
   <h5 style={{fontWeight:"800"}}>Frontend Frameworks</h5>
     <p> React.js</p>
 {/* <p> Redux</p> */}
@@ -23,16 +29,19 @@ const Skills = () => {
   <h5 style={{fontWeight:"800"}}>UI/UX Design</h5>
     <p> Figma</p>
     <p> Wireframing and Prototyping</p>
-    <p> Bootstrap</p>
-    <p> Framer Motion</p>
+    <p> Bootstrap (for UI designing)</p>
+    <p> Framer Motion </p>
+    <p> (for smooth Animations) </p>
   <div class="textcard">
   <h5 style={{fontWeight:"800"}}>Version Control</h5>
     <p>Git and GitHub</p>
   </div>
   <h5 style={{fontWeight:"800"}}>APIs</h5>
+  <p>Axios (for APIs integration)</p>
     <p>RESTful APIs</p>
-    <p>Axios, Fetch API</p>
-</div>
+    <p>Chartjs (for charts)</p>
+    <p>Fetch API</p>
+</motion.div>
      </div>
         </>
     )
