@@ -19,20 +19,45 @@ function Typeathon() {
       animate={{ opacity: 1, y: 0 }}  // End with text at its final position and visible
       transition={{ duration: 0.8, ease: "easeOut" }}  // Smooth transition
       style={{ overflow: 'hidden' }} // Optional: To ensure text stays within container
-                   className="heading1" >
+                   className="heading1 flexdeschide" >
  <div class="" style={{width: "43rem"}}>
   <div class="textcard">
-    <h3 style={{ fontSize:"23px"}}>Typeathon is a speed typing web app to enhance user's typing speed effectively.</h3>
+    <h3 >Typeathon is a speed typing web app to enhance user's typing speed effectively.</h3>
     <p class="">This website was designed to improve user's typing speed and accuracy. Where user can track their typing performance with instant feedback, choose from different customizable typing modes to match their skill level and goals.</p>
   </div>
 </div>
 <div class="" style={{width: "45rem"}}>
-  <div class="textcard">
+  <div class="textcard ">
     <p class="">Multiple Typing Modes each designed to challenge users in unique. These modes are customizable, allowing users to select the test that best suits their needs.</p>
   </div>
 </div>
 <div class="" style={{width: "15rem"}}>
+  <div class="textcard projdeveloperinfo">
+  <p style={{fontWeight:"800"}}>Live App 
+  <Link to= "https://typeathon.web.app" target="_blank" ><i class="fa-solid fa-link linkicon"></i>
+  </Link></p>
+    <p >https://typeathon.web.app</p>
+    <p style={{fontWeight:"800"}}> Developer</p>
+    <p>Maria Yasmeen</p>
+  </div>
+</div>
+                  </motion.div>
+                  <motion.div 
+      initial={{ opacity: 0, y: 20 }}  // Start with text below and invisible
+      animate={{ opacity: 1, y: 0 }}  // End with text at its final position and visible
+      transition={{ duration: 0.8, ease: "easeOut" }}  // Smooth transition
+      style={{ overflow: 'hidden' }} // Optional: To ensure text stays within container
+                   className="heading1 flexdescbox" >
+ <div class=""  >
   <div class="textcard">
+    <h3 >Typeathon is a speed typing web app to enhance user's typing speed effectively.</h3>
+    <p class="">This website was designed to improve user's typing speed and accuracy. Where user can track their typing performance with instant feedback, choose from different customizable typing modes to match their skill level and goals.</p>
+    <p class="">Multiple Typing Modes each designed to challenge users in unique. These modes are customizable, allowing users to select the test that best suits their needs.</p>
+  </div>
+</div>
+
+<div class="" style={{width: "13rem"}}>
+  <div class="textcard projdeveloperinfo">
   <p style={{fontWeight:"800"}}>Live App 
   <Link to= "https://typeathon.web.app" target="_blank" ><i class="fa-solid fa-link linkicon"></i>
   </Link></p>
@@ -43,6 +68,7 @@ function Typeathon() {
 </div>
                   </motion.div>
                 </div>
+             
 
      <div  className=" blacktxtitem" >
       <div className="typeimage">
@@ -58,11 +84,12 @@ function Typeathon() {
       initial={{ opacity: 0, y: 20 }}  // Start with text below and invisible
       animate={{ opacity: 1, y: 0 }}  // End with text at its final position and visible
       transition={{ duration: 0.9, ease: "easeOut" }}  // Smooth transition
-      style={{ overflow: 'hidden', paddingLeft:"40px" }} 
-                class="blacktxtitem" >
+      style={{ overflow: 'hidden'}} 
+                class="workdesc" >
+
  <div class="textcard" >
     <p style={{fontWeight:"800"}}> Design & Development</p>
-    <p><p style={{fontSize:"20px"}}>
+    <p><p >
 Design: The user interface was crafted to be clean and simple, focusing on ease of use and minimizing distractions. The choice of colors and fonts was intentional to enhance readability and user engagement.
 
 Development: The app was developed with a focus on responsiveness and performance. JavaScript was used to handle the typing test logic, while Firebase provided real-time capabilities and hosted the app.
@@ -70,96 +97,10 @@ Development: The app was developed with a focus on responsiveness and performanc
   </div>
   <div class="textcard" >
     <p style={{fontWeight:"800"}}> Outcomes & Impact</p>
-    <p style={{fontSize:"20px"}}>
+    <p>
     Typeathon successfully achieved its goal of providing a robust platform for improving typing skills. The app's ability to deliver instant feedback and track progress has been well-received by users. The project has also allowed me to refine my skills in web development, particularly in integrating real-time features and creating a responsive design.
 </p>
   </div>
- 
-  <div className="txtscroll">
-  <p style={{fontWeight:"800"}}> Technologies Used</p>
-   
-      <div className="scroll-content">
-        <div className="scroll-item">
-        <div class="card" style={{width: "18rem"}}>
-  <div class="card-body">
-    <h5 class="card-title">Frontend</h5>
-   <li>HTML</li>
-   <li>CSS</li>
-   <li>JavaScript</li>
-    </div>
-</div>
-        </div>
-        <div className="scroll-item">
-        <div class="card" style={{width: "18rem"}}>
-  <div class="card-body">
-    <h5 class="card-title">Backend</h5>
-   <li>Firebase</li>
-   <li>(for real-time user </li>
-   <li>data authentication)</li>
-    </div>
-</div>
-        </div>
-
-        <div className="scroll-item">
-        <div class="card" style={{width: "18rem"}}>
-  <div class="card-body">
-    <h5 class="card-title">Library</h5>
-   <li>React.js</li>
-    </div>
-</div>
-        </div>
-        <div className="scroll-item">
-        <div class="card" style={{width: "18rem"}}>
-  <div class="card-body">
-    <h5 class="card-title">Concepts</h5>
-   <li>Context API</li>
-   <li>React Hooks</li>
-   <li>React Router</li>
-   <li>Prop Drilling</li>
-    </div>
-</div>
-        </div>
-        <div className="scroll-item">
-        <div class="card" style={{width: "18rem"}}>
-  <div class="card-body" >
-    <h5 class="card-title">Deployment</h5>
-   <li>Firebase Hosting</li>
-    </div>
-</div>
-        </div>
-         <div className="scroll-item">
-        <div class="card" style={{width: "19rem"}}>
-  <div class="card-body">
-    <h5 class="card-title">Tools </h5>
-   <li>VS Code</li>
-   <li>Bootstrap</li>
-   <li>Git</li>
-    </div>
-</div>
-        </div>
-        <div className="scroll-item">
-        <div class="card" style={{width: "18rem"}}>
-  <div class="card-body">
-    <h5 class="card-title">Frontend</h5>
-   <li>HTML</li>
-   <li>CSS</li>
-   <li>JavaScript</li>
-    </div>
-</div>
-        </div>
-       
-        <div className="scroll-item">
-        <div class="card" style={{width: "18rem"}}>
-  <div class="card-body">
-    <h5 class="card-title">Backend</h5>
-   <li>Firebase</li>
-   <li>(for real-time user </li>
-   <li>data authentication)</li>
-    </div>
-</div>
-        </div>
-      </div>
-    </div>
 
 </motion.div>
 

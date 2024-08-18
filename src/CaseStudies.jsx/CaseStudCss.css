@@ -34,7 +34,61 @@
     display: flex;
     font-size: 14px;
   }
+  .flexdescbox{
+    display: none !important;
+  }
 
+ .projdeveloperinfo{
+  line-height: 13px !important;
+ }
+  @media(max-width:920px){
+    .flexdeschide{
+      display: none !important;
+    }
+    .flexdescbox{
+      display: contents !important;
+      display: flex !important;
+      flex-direction: row !important;
+    }
+    .heading1 {
+      padding: 10px !important;
+      line-height: 18px;
+    }
+    .heading1 p{
+      font-size: 13px !important;
+    }
+  
+    .textcard h3{
+      font-size: 20px;
+    }
+    .workdesc p{
+      font-size: 15px;
+    } 
+    .workdesc div{
+      padding: 12px ;
+    }
+}
+@media(max-width:570px){
+  .workdesc{
+    margin-top: 30px;
+flex-direction: column;  }
+
+.workdesc div{
+  padding: 11px !important ;
+}
+
+}
+@media(max-width:480px){
+  .flexdescbox{
+    display: contents !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .heading1 {
+    padding: 3px !important;
+    line-height: 18px;
+  }
+}
   @keyframes scroll {
     0% {
       transform: translateX(0);
@@ -110,11 +164,22 @@ body {
     padding: 1px 0;
 }
 .blacktxtitem {
+  margin-top: 20px;
  display: flex;
 }
 .blacktxtitem div{
   padding: 7px;
 }
+.workdesc{
+  padding: 15px;
+  margin-top: 30px;justify-content: center;
+  align-items: center;
+ display: flex;
+}
+.workdesc div{
+  padding: 20px;
+}
+
 .typeimage{
   margin-left:100px ;
 }

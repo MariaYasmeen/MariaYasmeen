@@ -382,6 +382,7 @@ color: grey;
   font-family: "Urbanist", sans-serif;
   text-decoration: none;
 }
+
 @media(max-width:983px){
   .font-class{
       font-size: 45px !important ;
@@ -404,6 +405,7 @@ color: grey;
     line-height: 89px;
   }
 }
+
 
 @media(max-width:500px){
   .font-class{
@@ -442,12 +444,12 @@ color: grey;
      /* Adjust the gap size as needed */
 }
 
-@media (max-width: 1084) {
-  .CV-gap{
-    margin-left : 45%;
-    }
-    
-    
+
+
+@media(max-width:500px){
+  .font-class{
+    font-size: 28px !important ;
+}
 }
 .contact-div{
   margin-top: 30%;
