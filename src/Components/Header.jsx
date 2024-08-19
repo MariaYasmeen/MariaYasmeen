@@ -1,23 +1,18 @@
 import { Link } from "react-router-dom";
-import Contact from "./Contact";
 import React from 'react';
 
 const Header = () =>{
     return (
         <>
-          <div className="bg-ctr ">
-    <div className="bg-ctr-1">
-    <div className="flex-ctre-12 ">
-    <div className="box1 ">
-    <div className="">
-        <h2 className="font-class">Maria Yasmeen</h2>
-        <p>Web developer | UI/UX Designer</p>
-    
-        <div class="Navbardropdown top-content">
+        
+        <header className="flex-navbar">
+        <h1 className="navbar-heading">Maria Yasmeen</h1>
+        <h2 className="navbar-subheading">Web developer | UI/UX Designer</h2>
+        <div class="Navbardropdown " style={{position:"absolute", zIndex: "100"}}>
   <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 |||  </a>
 
-  <ul class="dropdown-menu" style={{height:"18em", width:"18em", padding:"10px"}}>
+  <ul class="dropdown-menu" style={{height:"18em", width:"18em", padding:"10px"}} >
     <li><Link class="dropdown-item" to="/"><span>01</span>  About</Link></li>
     <li><Link class="dropdown-item" to="/skills"><span>02</span>   Skills</Link></li>
     <li><Link class="dropdown-item" to="/work"><span>03</span>   Work</Link></li>
@@ -31,12 +26,7 @@ const Header = () =>{
     <Link to="/skills"><span>02</span>   Skills</Link>
     <Link to="/work"><span>03</span>   Work</Link>
     </div>
-        </div>
-</div>
-</div>
-<Contact />
-</div>
-</div>
+      </header>
         </>
     )
 }

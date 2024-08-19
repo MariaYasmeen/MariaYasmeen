@@ -36,11 +36,11 @@ const ProjectDetails = () => {
     <div className="bg-ctr-1">
    
     <div className="flex-ctre-12 ">
-    <div className="item top-content">  
+    <div className="item " style={{position:"absolute", zIndex: "100"}}>  
 
 <h1 className='workname'>{projectName}<span> / Project Analysis</span></h1>
 </div>
-    <div className="box1 top-content ">
+    <div className="box1  " style={{position:"absolute", zIndex: "100"}}>
     <div className="">
         <h2 className="font-class ">Maria Yasmeen</h2>
         <p>Web developer | UI/UX Designer</p>

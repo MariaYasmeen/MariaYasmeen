@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import './Pages.css';
 import { easeInOut } from 'framer-motion/dom';
+import Contact from '../Components/Contact';
 
 const Projects = () => {
     const projects = [
@@ -48,11 +49,16 @@ const Projects = () => {
         <title>Work - Maria Yasmeen</title>
         <meta name="description" content="Browse through my most recent work in dev and design industry." />
       </Helmet>
-            <Header />
-            <div className="" >
-         
-                <motion.div className="scrollable-content"   style={{ display: 'inline-block' }}  
- >
+          
+          
+      <div className="AppContainer">
+    <div className="flex-layout">
+      <Header />
+
+      <main className="flex-content">
+        <div className="flex-scrollable">
+        <motion.div  className='scrollable-content'
+                 style={{ display: 'inline-block' }}  >
                     <div className="" style={{color:"transparent"}}>
                         <p>djhdb</p>
                         <p>dkhvhdb</p>
@@ -83,6 +89,11 @@ const Projects = () => {
                         <p>dkhvhdb</p>
                     </div>
                 </motion.div>
+                   </div>
+      </main>
+
+            <Contact />
+            </div>
             </div>
         </>
     );

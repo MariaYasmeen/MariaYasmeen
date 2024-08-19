@@ -70,7 +70,6 @@
 }
 @media(max-width:570px){
   .workdesc{
-    margin-top: 30px;
 flex-direction: column;  }
 
 .workdesc div{
@@ -172,7 +171,8 @@ body {
 }
 .workdesc{
   padding: 15px;
-  margin-top: 30px;justify-content: center;
+  margin-top: 20px;
+  justify-content: center;
   align-items: center;
  display: flex;
 }
