@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import './Pages.css';
 import { Helmet } from 'react-helmet-async';
 import LoadingPage from './LoadingPage';
+import Header from '../Components/Header';
+import Header2 from '../CaseStudies.jsx/Header2';
 
 // Lazy load the components
 const TypeathonCS = React.lazy(() => import('../CaseStudies.jsx/Typeathon'));
@@ -32,39 +34,19 @@ const ProjectDetails = () => {
         <meta name="description" content={`Know the Project Analysis for ${projectName}.`} />
       </Helmet>
         
-<div className="bg-ctr  ">
-    <div className="bg-ctr-1">
-   
-    <div className="flex-ctre-12 ">
-    <div className="item top-content">  
+      <div className="AppContainer">
+    <div className="flex-layout">
+      <Header2 />
 
-<h1 className='workname'>{projectName}<span> / Project Analysis</span></h1>
-</div>
-    <div className="box1 top-content ">
-    <div className="">
-        <h2 className="font-class ">Maria Yasmeen</h2>
-        <p>Web developer | UI/UX Designer</p>
-        <div className="box2">
-    <Link to="/"><span>01</span>  About</Link>
-    <Link to="/skills"><span>02</span>  Skills</Link>
-    <Link to="/work"><span>03</span>  Work</Link>
-    </div>  
-        </div>
-        
-</div>
-</div>
-
-<div className="  ">
-    
-                <Suspense fallback={<LoadingPage />}>
+      <main className="flex-content" >
+        <div className="flex-scrollable">
+        <Suspense fallback={<LoadingPage />}>
                 {renderProjectDetails()}
-                </Suspense>   
-            </div>
+                </Suspense> 
+      </div>
+      </main>             
             
-<Contact />
-
 </div>
-
 </div>
 
 

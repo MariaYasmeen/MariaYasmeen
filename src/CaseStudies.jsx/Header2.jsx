@@ -1,16 +1,34 @@
-import { Link } from 'react-router-dom';
-import React from 'react';
-import { motion } from 'framer-motion';
+import react from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import "./CaseStudCss.css";
 
-
-function CrypTrack() {
-
+const Header2 = () =>{
   return (
     <>
-    <div className="scrollable-content-container">
-      <div className="desc-scrollable-content">
-       <img src='/BGimage.jpg' className="item-img"></img>
+ <nav class="navbar navbar-expand-lg navbar-dark navbarsticky " style={{height:"7em"}} aria-label="Eighth navbar example">
+    <div class="container" >
+      <a class="navbar-brand" style={{ color:"black"}} href="#">Maria Yasmeen</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample07">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+        <div className="navbaritems textclr" style={{display:"flex", flexDirection:"column"}}>
+    <Link to="/"><span>01</span>  About</Link>
+    <Link to="/skills"><span>02</span>   Skills</Link>
+    <Link to="/work"><span>03</span>   Work</Link>
+    </div>
+        </ul>
+        <form role="search">
+        <Link to="/"><span>01</span>  instagram</Link>
+         </form>
+      </div>
+    </div>
+  </nav>
+  <main style={{display:"inline-block"}}>
+  <img src='/BGimage.jpg' className="item-img"></img>
 
 <div className="flex3boxes">
         <div class="" style={{width:"28rem"}}>
@@ -34,8 +52,6 @@ function CrypTrack() {
     <p>Maria Yasmeen</p> </div>
 </div>
 </div>
-
-
 <div  className=" blacktxtitem" >
       <div className="typeimage">
      <img src="/type2.png" class="img-fluid" alt="" style={{width:"900px"}} />
@@ -65,8 +81,6 @@ Development: The app was developed with a focus on responsiveness and performanc
 </div>
 
 </motion.div>
-
-
 <div className="item">
                   <h3>Challenges VS Solutions VS Results</h3>
                   <div class="main">
@@ -138,10 +152,11 @@ Development: The app was developed with a focus on responsiveness and performanc
                   <h4 style={{float:"inline-end", marginRight:"40px"}}>Next Project</h4>
                   <Link to="/work/M.Yasmeen"  className="project-link nextproject" >M.Yasmeen</Link>
                 </div>
-      </div>
-    </div>
+    
+
+  </main>
     </>
   )
 }
 
-export default CrypTrack;
+export default Header2;

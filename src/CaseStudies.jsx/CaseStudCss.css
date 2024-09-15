@@ -49,6 +49,22 @@
   font-family: "Anton", sans-serif;
   }
 
+
+  .textcard{
+    margin: 10px;
+    padding: 12px;
+  }
+.flex3boxes{
+  display: flex;
+  flex-direction: row !important;
+}
+.flex3boxes div {
+
+padding: 11px !important;
+}
+.textcard{
+  display: flex;
+}
   /* Cards CSS*/
   
 * {
