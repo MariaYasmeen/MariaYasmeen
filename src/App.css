@@ -32,9 +32,9 @@
 }
 
 .CaseStudCss {
-  position: fixed; /* Use fixed positioning to make it appear relative to the viewport */
+  bottom: 0; /* Position it at the  position: fixed; /* Use fixed positioning to make it appear relative to the viewport */
   bottom: 0; /* Position it at the bottom of the viewport */
-  left: 50%;
+  left: 52%;
   top: 16px; /* Center horizontally */
   transform: translateX(-50%); /* Adjust horizontal centering */
   width: 97% !important; /* Ensure it fits within the viewport with some padding */
@@ -49,31 +49,13 @@
 
 .CaseStudCss p {
 font-size: 17px;
-  font-family: "Urbanist", sans-serif;
+font-family:monospace;
     color: lightgrey; /* Text color */
 }
 
 
 .CaseStudCss::-webkit-scrollbar{
   display: none;
-}
-
-.scrollable-content {
-  position: absolute;
-  top: 55%;
-  z-index: 0;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 87%;
-  height: 94vh; /* Ensure height to create a scrollable area */
-  overflow: auto; /* Enable scrolling */
-  left: 57%;
-  transform: translate(-55%, -55%);
-  font-optical-sizing: auto;
-  font-family: "Anton", sans-serif;
-  transition: 0.2s all ease;
-
 }
 
 .nextproject{ 
@@ -134,30 +116,202 @@ font-size: 17px;
 
 
 /* Scrollable content links styling */
+
+.scrollable-content {
+  position: absolute;
+  top: 50%;
+  z-index: 10; 
+  display: flex;
+  justify-content: center !important;
+  align-items: center ;
+  flex-direction: column;
+  font-optical-sizing: auto;
+  font-family: "Anton", sans-serif;
+  width: 80%;
+  height: 96vh; /* Ensure height to create a scrollable area */
+  overflow: auto; /* Enable scrolling */
+  left: 56%;
+  transform: translate(-50%, -50%);
+  font-optical-sizing: auto;
+  transition: 0.2s all ease;
+
+}
+
+
 .scrollable-content a {
-  color: lightgrey !important;
-  align-items: center;
-   display: flex;
+  color: white !important;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center !important;
+  align-items: center ;
   flex-wrap: wrap;
   font-size: 110px;
+  font-weight: 800;
   text-transform: uppercase;
   text-decoration: none;
-  -webkit-text-stroke: 0.1px lightgrey; /* Creates the black outline with a 2px width */
-  direction: rtl; 
-  text-shadow: -10px 15px 15px rgba(0, 0, 0, 0.5) !important;
-  transform: perspective(600px) rotateX(33deg) scale(1.4);
+  -webkit-text-stroke: 0.3px white; /* Creates the black outline with a 2px width */
+  direction: rtl;
+   text-shadow: 1px 20px  20px 20px rgba(0, 0, 0, 0.5) !important;
+  transform: perspective(500px) rotateX(36deg) scale(1.3);
  transition: 0.5s all ease;
-  line-height: 125px;
-  font-weight: 800;
-  letter-spacing: 3px;
+  line-height: 97px;
+  text-shadow: 1px 10px 20px 20px black !important;
+  letter-spacing: 2.6px;
 }
 
 .scrollable-content a:hover { color: transparent !important;
   -webkit-text-stroke: 0.3px white; /* Creates the black outline with a 2px width */
-  transform: perspective(500px) rotateX(5deg) scale(1.2);
-  text-shadow: 1px 0px 20px rgba(0, 0, 0, 0.5) !important;
+  transform: perspective(500px) rotateX(10deg) scale(1.1);
   font-weight: 400;
 }
+.projectmargintxt{
+  margin-bottom: 50em;
+}
+@media(max-width:1035px){
+  .scrollable-content a {
+    font-size: 88px;
+    line-height: 80px;
+    letter-spacing: 2.3px;
+  }
+  .projectmargintxt{
+    margin-bottom: 46em;
+  }
+  .skillcss{
+    letter-spacing: 0.7px !important ;
+    font-size: 14px !important ;
+    left: 77% !important;
+  }
+  .skillcss div{
+    padding: 0px;
+    font-size: 12px;
+    width: 8rem  !important;
+    line-height: 8px ;
+  }
+}
+  @media(max-width:937px){
+    .scrollable-content a {
+      font-size: 80px;
+      line-height: 75px;
+      letter-spacing: 2.2px;
+    }
+    .projectmargintxt{
+      margin-bottom: 37em;
+    }
+  }
+
+    @media(max-width:883px){
+      .scrollable-content a {
+        font-size: 70px ;
+        line-height: 66px ;
+        letter-spacing: 2.2px;
+      }
+      .projectmargintxt{
+        margin-bottom: 29em;
+      }
+      .skillcss{
+        letter-spacing: 0.5px !important ;
+        font-size: 13px !important ;
+        left: 73% !important;
+      }
+      .skillcss div{
+        padding: 0px;
+        font-size: 12px;
+        line-height: 12px !important;
+        width: 6rem  !important;
+      }
+    }
+      @media(max-width:773px){
+        .scrollable-content a {
+          font-size: 55px !important;
+          line-height: 52px !important;
+          letter-spacing: 2.1px;
+        }
+        .projectmargintxt{
+          margin-bottom: 19em;
+        }
+
+        .skillcss{
+          letter-spacing: 0.4px !important ;
+          font-size: 12px !important ;
+          left: 60% !important;
+        }
+        .skillcss div{
+          padding: 0px;
+          font-size: 12px;
+          line-height: 12px !important;
+          width: 6.6rem  !important;
+        }
+   
+      }
+      
+        @media(max-width:613px){
+          .scrollable-content a {
+            font-size: 44px !important;
+            line-height: 34px !important;
+            letter-spacing: 2px;
+          }
+          .projectmargintxt{
+            margin-bottom: 10em;
+          }
+          .skillcss{
+            letter-spacing: 0px !important ;
+            left: 50% !important;
+          }
+          .skillcss div{
+            font-size: 11px !important;
+            line-height: 12px !important;
+            width: 6.3rem  !important;
+          }
+          .aboutcss{
+            left: 55% !important;
+            font-size: 12px !important;
+          }
+        }
+        @media(max-width:500px){
+          .scrollable-content a {
+            font-size: 38px !important;
+            line-height: 27px !important;
+            letter-spacing: 2.5px;
+            font-weight: 400;
+            -webkit-text-stroke: 0px white; /* Creates the black outline with a 2px width */
+          }
+          .projectmargintxt{
+            margin-bottom: 5em;
+          }
+          .skillcss{
+            letter-spacing: 0px !important ;
+            left: 39% !important;
+          }
+          .skillcss div{
+            font-size: 9px !important;
+            line-height: 12px !important;
+            width: 5.5rem  !important;
+          }
+          .skillcss h5{
+            font-size: 16px;
+          }
+         
+        }
+        @media(max-width:440px){
+          .scrollable-content a {
+            font-size: 31px !important;
+            line-height: 20px !important;
+            letter-spacing: 2.2px;
+            font-weight: 400;
+            -webkit-text-stroke: 0px white; /* Creates the black outline with a 2px width */
+          }
+          .projectmargintxt{
+            margin-bottom: 0em;
+          }
+        
+        }
+.projectcenter{
+  display: flex;
+  justify-content: center !important;
+  align-items: center ;
+}
+
+
 
 
 /* Hide scrollbar for WebKit browsers */
@@ -174,30 +328,50 @@ font-size: 17px;
 }
 
 .skillcss{
-  font-family: "Urbanist", sans-serif;
+  font-family:monospace;
   color: lightgrey;
   position: absolute;
   background-color: transparent !important;
   top: 57%;
+  width: 59% !important;
+  left: 83% ;
+  letter-spacing: 1px ;
+  font-size: 15px ;
+  transform: translate(-50%, -50%);
+}
+.skillcss div{
+  width: 10rem;
+  padding: 0px;
+  line-height: 12px;
+}
+.aboutcss{
+  font-family:monospace;
+  color: lightgrey;
+  position: absolute;
+  background-color: transparent !important;
+  top: 55%;
   width: 57%;
-  left: 85%;
+  left: 75%;
   letter-spacing: 1px;
-  font-size: 14px !important;
+  font-size: 14px;
   transform: translate(-50%, -50%);
 }
 
-.skillcss div{
+.aboutcss div{
+  padding: 0px;
+  line-height: 10px;
+  width: 12em;
   background-color: transparent;
   border: none !important;
 }
 .font-class{
   letter-spacing: 1px;
   font-weight: 500;
-  font-family: "Urbanist", sans-serif;
-font-size: 50px !important;
+  font-family:monospace;
+font-size: 53px !important;
 color: lightgrey;
 margin: 10px;
-letter-spacing: 1px;
+letter-spacing: 0px;
 }
 
 .cart{
@@ -211,11 +385,16 @@ letter-spacing: 1px;
     -webkit-text-stroke: 0.3px grey; 
     border: 1px  solid black; 
 }
+.box2{
+  color: white !important;
+}
 span{
-  font-family: "Urbanist", sans-serif;
-  font-size: 8px;
+  font-family:monospace;
+  font-size: 10px;
   font-weight: 400;
-  text-transform:none;color: lightgrey;
+  padding: 6px;
+  text-transform:none;
+  color: lightgrey;
 }
 .ctr1 {
 width: 100%;
@@ -228,12 +407,11 @@ height: 100%;color: lightgrey;
     position: fixed;
     display: flex;
     top: 0;
-    left: 0; 
-    justify-content: center;
+    left: 0; justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
-    font-family: "Urbanist", sans-serif;
+    font-family:monospace;
     background-color:black !important;
    color: lightgrey;
   
@@ -250,10 +428,21 @@ height: 100%;color: lightgrey;
     background-position: 0% 50%;
   }
 }
+.flex-layout {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black; /* Add border to the child div */
+  box-sizing: border-box; /* Include border in the width and height */
+  border-radius: 6px;
+  margin: 0;
+  padding: 0;
+
+}
 .bg-ctr-1{
-  width: 97%; /* Adjust the width percentage as needed */
-  height: 95%; /* Adjust the height percentage as needed */
+  width: 98%; /* Adjust the width percentage as needed */
+  height: 97%; /* Adjust the height percentage as needed */
   margin: auto; /* Center the child div horizontally */
+  border: 1px solid black; /* Add border to the child div */
   box-sizing: border-box; /* Include border in the width and height */
   position: fixed;
   border-radius: 6px;
@@ -261,8 +450,7 @@ height: 100%;color: lightgrey;
   background-size: 300% 300%;
   animation: color 50s ease-out reverse infinite;
   margin: 0;
-  padding: 5px;
-  overflow: auto; /* Allows scrolling if content overflows */
+  padding: 0;
 }
 .flex-ctre-12{
   display: flex;
@@ -308,8 +496,16 @@ height: 100%;color: lightgrey;
   height: 100%;
   flex: 1;
   margin: 35px;
-  font-family: "Urbanist", sans-serif;}
-
+  font-family:monospace;
+}
+.navbarsticky{
+  position:fixed;
+}
+.navbaritems a{
+  font-family:monospace;
+  text-decoration: none;
+  color: #000000;
+}
 .box2{
   position:absolute;
   margin-top: 10px;
@@ -319,14 +515,15 @@ height: 100%;color: lightgrey;
   text-decoration: none;
   line-height: 1.4rem;
   font-size: 14px;
-  color: lightgrey;
 display: block;
+color: whitesmoke !important;
 letter-spacing: 1px;
 font-optical-sizing: auto;
 font-weight: 400;
 font-style: normal;}
+
 .box2 a:hover{
-  color: grey;
+  color: grey !important;
 }
 
 
@@ -352,10 +549,10 @@ line-height: 1.2em;
 }
 
 .nav-btn {
-  z-index: -1 !important;
-  font-family: "Urbanist", sans-serif;
+  font-family:monospace;
  display: flex;
   font-size: 15px;
+  position: absolute;
   flex-direction: row;
   margin-left: 22px;
   justify-content: space-between;
@@ -365,7 +562,7 @@ line-height: 1.2em;
   display: none;
 }
 .nav-btn div a{
-  font-family: "Urbanist", sans-serif;
+  font-family:monospace;
   font-optical-sizing: auto;
   font-weight: 400;
   letter-spacing: 1px;
@@ -381,10 +578,9 @@ color: grey;
 }
 .nav-btn a{
   color:lightgrey;
-  font-family: "Urbanist", sans-serif;
+  font-family:monospace;
   text-decoration: none;
 }
-
 @media(max-width:983px){
   .font-class{
       font-size: 45px !important ;
@@ -398,16 +594,9 @@ color: grey;
   .nav-btn div a{
     font-size: 12px;
   }
-  .skillcss{
-     left: 78%;
-  }
-  .scrollable-content a {
-    letter-spacing: 2px; 
-    font-size: 80px;
-    line-height: 89px;
-  }
-}
 
+
+}
 
 @media(max-width:500px){
   .font-class{
@@ -416,44 +605,39 @@ color: grey;
 .box2 {
   display: none;
  }
-.skillcss {
-  font-size: 15px;
-}
- .box2{
+
+ .CV-gap a{
   display: none;
  }
  .Navbardropdown{
    display:contents;
  }
- .skillcss{
-  left: 60%;
-  font-size: 13px !important;
-}
+ 
 }
 @media(max-width:350px){
 
   .nav-btn div a{
     font-size: 10px;
   }
+ 
+  
 }
 
 .gap-1{
-  font-family: "Urbanist", sans-serif;
+  font-family:monospace;
   display: flex !important;
   position: relative;
   color: lightgrey;
     flex-direction: row !important; /* Align items vertically */
      /* Adjust the gap size as needed */
 }
-.gap-1 div ink{
-  text-decoration: none !important;}
 
-
-
-@media(max-width:500px){
-  .font-class{
-    font-size: 28px !important ;
-}
+@media (max-width: 1084) {
+  .CV-gap{
+    margin-left : 45%;
+    }
+    
+    
 }
 .contact-div{
   margin-top: 30%;
@@ -493,14 +677,13 @@ color: grey;
 
 .item-img {
   transition:  1s all ease;
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover; /* Cover the entire background */
-  z-index: -1; /* Send the image behind the content */
-  opacity: 0.7; /* Optional: Add transparency to the image */
+  z-index: 1; /* Send the image behind the content */
+  opacity: 0.3; /* Optional: Add transparency to the image */
   border-radius: 8px; /* Optional: Add some border radius */
 }
 
@@ -511,8 +694,8 @@ color: grey;
 .top-content {
   width: 100vh;
   position: absolute; /* Position relative to the nearest positioned ancestor */
-  z-index: 100; /* High z-index to be on top of all other content */
-  padding: 5px;
+  z-index: 100 !important; /* High z-index to be on top of all other content */
+  padding: 10px;
   color: #fff;
   font-size: 2rem;
   border-radius: 8px;
@@ -540,43 +723,12 @@ color: grey;
 }
 /* Hide scrollbar for Edge and IE */
 ::-ms-scrollbar {
-  display: none; /* Hide scrollbar */
+  display:"none"
 }
-
 /* Set the entire layout with a full viewport height */
-.flex-layout {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
+
 
 /* Navbar styles */
-.AppContainer{
-  position: fixed;
-  display: flex;
-  top: 0;
-  left: 0; 
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  font-family: "Urbanist", sans-serif;
-  background-color:black !important;
- color: lightgrey;
-
-}
-.flex-layout{
-  background: linear-gradient(85deg,#02010a, #242423,  #333533, #000000, #252422, #000000);
-  animation: color 50s ease-out reverse infinite;
-  background-size: 300% 300%;
-  width: 98%; /* Adjust the width percentage as needed */
-  height: 96%; /* Adjust the height percentage as needed */
-  margin: auto; /* Center the child div horizontally */
-  box-sizing: border-box; /* Include border in the width and height */
-  position: fixed;
-  border-radius: 6px;
- 
-}
 .flex-navbar {
   color: #fff;
   padding: 1rem;
@@ -588,6 +740,12 @@ color: grey;
   font-size: 1.5rem;
 }
 
+.flex-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .navbar-subheading {
   margin-top: 0.5rem;
   font-size: 1.2rem;
@@ -596,6 +754,7 @@ color: grey;
 
 /* Footer styles */
 .flex-footer {
+  background-color: #333;
   color: #fff;
   padding: 1rem;
   position: sticky;
@@ -621,22 +780,7 @@ color: grey;
   display: flex;
   gap: 0.5rem; /* Space between the buttons within each box */
 }
-.box div{
-  color: white;
-  display: flex;
-  flex-direction: column;}
 
-  .box a{
-    color: white;
-    text-decoration: none;
-  }
-  .box a:hover{
-    color: grey;
-
-  }
-  .box div:hover{
-    color: grey;
-  }
 .footer-btn {
   background-color: #555;
   color: white;
@@ -646,7 +790,7 @@ color: grey;
   font-size: 1rem;
   border-radius: 4px;
 }
-
+.social-links
 .footer-btn:hover {
   background-color: #777;
 }
@@ -654,7 +798,6 @@ color: grey;
 /* Second container with a single button */
 .container-single {
   display: flex;
-  padding-right: 5px;
   align-items: center; /* Center the button vertically */
 }
 
@@ -664,15 +807,33 @@ color: grey;
   padding: 2rem;
   overflow-y: auto; /* Enable scrolling within the content area */
 }
-.flex-scrollable{
-  display: flex;
-  flex-direction: column;
-  float: inline-end;
-}
 
 /* Scrollable content styles */
 .flex-scrollable {
-  max-width: 900px; /* Limit the width of the scrollable content */
+  max-width: 600px; /* Limit the width of the scrollable content */
   width: 100%;
   text-align: justify;
+}
+
+/* The scrollable content container should fill the remaining space between the navbar and footer */
+.scrollable-content-container {
+  flex: 1;
+  overflow-y: auto; /* Enable scrolling within this container */
+}
+
+/* The scrollable content itself should be full height and width within its container */
+.desc-scrollable-content {
+  padding: 0rem;
+  color: white;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  height: 96vh;
+  overflow: auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-optical-sizing: auto;
 }
