@@ -4,8 +4,7 @@ import Header from '../Components/Header';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import './Pages.css';
-import { easeInOut } from 'framer-motion/dom';
-
+ 
 const Projects = () => {
     const projects = [
         { name: 'FontBook', description: 'Google Fonts Library 2024', link: 'https://fontboook.web.app/' },
