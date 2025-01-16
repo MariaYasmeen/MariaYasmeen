@@ -165,7 +165,7 @@ font-family:monospace;
   font-weight: 400;
 }
 .projectmargintxt{
-  margin-bottom: 50em;
+  margin-bottom: 24em;
 }
 @media(max-width:1035px){
   .scrollable-content a {
