@@ -136,6 +136,44 @@ font-family:monospace;
   transition: 0.2s all ease;
 
 }
+/* Responsive Navbar */
+.dropdown-toggle-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 10px;
+  border-radius: 8px;
+  position: absolute; 
+  box-shadow:10px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu.show {
+  display: flex;
+}
+
+.box2 {
+  display: flex;
+  gap: 15px;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .box2 a{
+    display: none !important ;
+  }
+  .dropdown-toggle-btn {
+    display: block; /* Show toggle button */
+  }
+}
 
 
 .scrollable-content a {
@@ -507,13 +545,16 @@ height: 100%;color: lightgrey;
   color: #000000;
 }
 .box2{
+  display: flex;
+  flex-direction: column;
   position:absolute;
-  margin-top: 10px;
+  margin-top: 10px; 
   margin-left: 0px;
 }
 .box2 a{
+  padding: 0px;
   text-decoration: none;
-  line-height: 1.4rem;
+  line-height: 1em;
   font-size: 14px;
 display: block;
 color: whitesmoke !important;
@@ -587,10 +628,7 @@ color: grey;
   }
   .nav-btn{
     margin-left: 10px;
-  }
-  .box2 a{
-    font-size: 12px;
-  }
+  } 
   .nav-btn div a{
     font-size: 12px;
   }
@@ -601,10 +639,7 @@ color: grey;
 @media(max-width:500px){
   .font-class{
     font-size: 28px !important ;
-}
-.box2 {
-  display: none;
- }
+} 
 
  .CV-gap a{
   display: none;
