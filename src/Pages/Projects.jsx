@@ -8,19 +8,10 @@ import { easeInOut } from 'framer-motion/dom';
 
 const Projects = () => {
     const projects = [
-        { name: 'FontBook', description: 'Google Gonts Library 2024' },
-        { name: 'M.Yasmeen', description: 'Clothing Store | 2024' },
-        { name: 'Typeathon', description: 'Speed Typing Test App | 2024' },
-        { name: 'Guideway', description: 'Navigation Guide | 2024' },
-        // { name: 'merapakistan', description: 'Pakistan Travel Guide | 2024' },
-        // { name: 'History book', description: 'Commission 2024' },
-        // { name: 'Homedashboard', description: 'Commission 2024' },
-        // { name: 'CrypTrack', description: 'Crypto Currency Live Tracking | 2024' },
-        // { name: 'shop bazar', description: 'Commission 2024' },
-        // { name: 'you know it', description: 'Commission 2024' },
-        // { name: 'NEWSChannel', description: 'Commission 2024' },
-        // { name: 'PLAin tracker', description: 'UI Project' },
-        // { name: 'Pizza hut', description: 'UI Project' },
+        { name: 'FontBook', description: 'Google Fonts Library 2024', link: 'https://fontboook.web.app/' },
+        { name: 'M.Yasmeen', description: 'Clothing Store | 2024', link: 'https://myaasmeeen.web.app/' },
+        { name: 'Typeathon', description: 'Speed Typing Test App | 2024', link: 'https://typeathon.web.app/' },
+        { name: 'Guideway', description: 'Navigation Guide | 2024', link: 'https://myaasmeeen.web.app/' },
     ];
 
     const textVariant = {
@@ -51,50 +42,34 @@ const Projects = () => {
       </Helmet>
             <Header />
             <div className="projectcenter" >
-         
-                <motion.div className="scrollable-content"  
- >
-                    <div className="" style={{color:"transparent"}}>
-                        {/* <p>djhdb</p>
-                    
-                        <p>dkhvdb</p>
-                        <p>dkhvhdb</p>
-                        <p>dkhvhdb</p>
-                        <p>dkhvhdb</p>
-                        <p>dkhvdb</p>
-                        <p>dkhvdb</p>
-                        <p>dkhvhdb</p>
-                        <p>dkhvhdb</p>
-                        <p>dkhvhdb</p>
-                        <p>dkhvdb</p>
-                        <p>dkhvhdb</p> */}
-                        <p className='projectmargintxt'>dkhvhdb</p>
+                <motion.div className="scrollable-content">
+                    <div   style={{color:"transparent"}}>
+                    <p className='projectmargintxt'>dkhvhdb</p>
                     </div>
                     <motion.div
                  initial="hidden"
-                 animate="visible"
-                 className='responsive-text'
+                 animate="visible" 
                  variants={textVariant}
                  style={{ display: 'inline-block' }} // Maintain original CSS styling
                   >
 
-                    {projects.map((project) => (
-                        <><div  style={{display:"flex", justifyContent:"space-evenly"}}>
-                                                <span>{project.description}</span>
-                                                <span>View Case Study</span>
-                                                </div>
+                       {projects.map((project) => (
+                            <><div  style={{display:"flex", justifyContent:"space-evenly"}}>
+                            <span>{project.description}</span>
+                            <span>View Case Study</span>
+                            </div>
 
-                        <Link
-                            key={project.name}
-                            // to={`/work/${project.name}`}
-                            className="project-link"
-                        >
-                            {project.name} 
-                        </Link>
-                        </>
-                    ))}
+    <Link
+        key={project.name}
+        to={project.link} 
+        target="_blank"
+    >
+        {project.name} 
+    </Link>
+    </>
+                        ))}
                     </motion.div>
-                     <div className="" style={{color:"transparent"}}>
+                     <div  style={{color:"transparent"}}>
                         <p>djhdb</p>
                         <p>dkhvhdb</p>
                         <p>dkhvhdb</p>
