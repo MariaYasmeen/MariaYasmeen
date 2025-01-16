@@ -24,8 +24,22 @@
 
   
   /* Style for the loading text */
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    background-color: rgb(37, 37, 37); /* Grey background */
+    position: fixed; /* Ensures it stays in place */
+    top: 0;
+    left: 0;
+    z-index: 9999; /* Ensures it appears above other content */
+}
+  
   .loading-text {
-    color: black;
+    color: black; 
+    font-family: monospace;
     font-size: 1.3.5rem;
   }
   

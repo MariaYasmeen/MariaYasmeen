@@ -11,7 +11,7 @@ const Projects = () => {
         { name: 'FontBook', description: 'Google Fonts Library 2024', link: 'https://fontboook.web.app/' },
         { name: 'M.Yasmeen', description: 'Clothing Store | 2024', link: 'https://myaasmeeen.web.app/' },
         { name: 'Typeathon', description: 'Speed Typing Test App | 2024', link: 'https://typeathon.web.app/' },
-        { name: 'Guideway', description: 'Navigation Guide | 2024', link: 'https://myaasmeeen.web.app/' },
+        { name: 'Guideway', description: 'Navigation Guide | 2024', link: 'https://devpost.com/software/gnec_hackaton_transit' },
     ];
 
     const textVariant = {

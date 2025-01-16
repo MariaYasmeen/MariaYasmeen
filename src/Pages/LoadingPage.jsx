@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 export default function LoadingPage() {
   return (
-    <div className="loading">
+    <div className="loading ">
       <motion.h4 
           initial={{ opacity: 0, y: 2 }}  // Start with text below and invisible
           animate={{ opacity: 1, y: 0 }}  // End with text at its final position and visible
