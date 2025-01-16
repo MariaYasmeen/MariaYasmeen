@@ -22,36 +22,44 @@ const Skills = () => {
                     <div className="flex3boxes " style={{ display: "flex" }}>
                         <div style={{ margin: "10px" }}>
                             <div className="card-body">
-                                <h5>Languages</h5>
+                            <p>_____________</p>
+                        <h5>Languages</h5>
                                 <p> HTML CSS Javascript</p>
                                 <p> SCSS</p>
                                 <p> TypeScript React JS</p>
+                                <p>_____________</p>
                                 <h5>Frontend Frameworks</h5>
                                 <p> React.js</p>
+                                <p>_____________</p>
+
                             </div>
                         </div>
                         <div style={{ margin: "10px" }}>
                             <div className="card-body">
+                            <p>_____________</p>
                                 <h5>UI/UX Design</h5>
                                 <p> Figma</p>
                                 <p> Wireframing & Prototyping</p>
+                                <p>_____________</p>
                                 <h5>UI Libraries</h5>
                                 <p>Bootstrap</p>
-                                <p>MUI</p>
-                                <p>(for UI designing)</p>
-                                <p> Framer Motion </p>
-                                <p>(for smooth Animations)</p>
+                                <p>MUI (for UI designing)</p>
+                                <p> Framer Motion (for smooth Animations) </p>
+                                <p>_____________</p>
                             </div>
                         </div>
                         <div style={{ margin: "10px" }}>
                             <div className="card-body">
+                            <p>_____________</p>
                                 <h5>Version Control</h5>
                                 <p>Git and GitHub</p>
+                                <p>_____________</p>
                                 <h5>APIs</h5>
                                 <p>Axios (for APIs integration)</p>
                                 <p>RESTful APIs</p>
-                                <p>Chart.js (for charts)</p>
+                                <p>Chart.js </p>
                                 <p>Fetch API</p>
+                                <p>_____________</p>
                             </div>
                         </div>
                     </div>
