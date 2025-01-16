@@ -11,18 +11,16 @@ const Header = () =>{
     <div className="box1 ">
     <div className="">
         <h2 className="font-class">Maria Yasmeen</h2>
-        <p>Web developer | UI/UX Designer</p>
+        <p>Frontend Web Developer | UI/UX Designer</p>
     
         <div class="Navbardropdown top-content">
   <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 |||  </a>
 
-  <ul class="dropdown-menu" style={{height:"18em", width:"18em", padding:"10px"}}>
+  <ul class="dropdown-menu" style={{height:"11em", width:"13em", padding:"10px"}}>
     <li><Link class="dropdown-item" to="/"><span>01</span>  About</Link></li>
     <li><Link class="dropdown-item" to="/skills"><span>02</span>   Skills</Link></li>
-    <li><Link class="dropdown-item" to="/work"><span>03</span>   Work</Link></li>
-    <li><Link class="dropdown-item" to="/work"><span>04</span> instagram</Link></li>
-    <li><Link class="dropdown-item" to="/work"><span>05</span> linkedin</Link></li>
+    <li><Link class="dropdown-item" to="/work"><span>03</span>   Work</Link></li> 
     <li><Link class="dropdown-item" to="/work"><span>06</span> Resume</Link></li>
   </ul>
 </div>

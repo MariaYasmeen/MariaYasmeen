@@ -3,7 +3,6 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import ProjectDetails from './Pages/ProjectDetails';
 import Projects from './Pages/Projects';
 import About from './Pages/About';
 import Skills from './Pages/Skills';
@@ -17,7 +16,6 @@ function App() {
           <Route path="/skills" element={<Skills />} />
     
           <Route path="/work" element={<Projects />} />
-          <Route path="/work/:projectName" element={<ProjectDetails />} />
            
         </Routes>
       </BrowserRouter>
