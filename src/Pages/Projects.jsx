@@ -56,9 +56,7 @@ const Projects = () => {
  >
                     <div className="" style={{color:"transparent"}}>
                         {/* <p>djhdb</p>
-                        <p>dkhvhdb</p>
-                        <p>dkhvhdb</p>
-                        <p>dkhvhdb</p>
+                    
                         <p>dkhvdb</p>
                         <p>dkhvhdb</p>
                         <p>dkhvhdb</p>
@@ -75,6 +73,7 @@ const Projects = () => {
                     <motion.div
                  initial="hidden"
                  animate="visible"
+                 className='responsive-text'
                  variants={textVariant}
                  style={{ display: 'inline-block' }} // Maintain original CSS styling
                   >
