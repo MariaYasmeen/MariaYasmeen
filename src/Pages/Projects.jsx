@@ -11,15 +11,16 @@ const Projects = () => {
         { name: 'FontBook', description: 'Google Gonts Library 2024' },
         { name: 'M.Yasmeen', description: 'Clothing Store | 2024' },
         { name: 'Typeathon', description: 'Speed Typing Test App | 2024' },
-        { name: 'merapakistan', description: 'Pakistan Travel Guide | 2024' },
-        { name: 'History book', description: 'Commission 2024' },
-        { name: 'Homedashboard', description: 'Commission 2024' },
-        { name: 'CrypTrack', description: 'Crypto Currency Live Tracking | 2024' },
-        { name: 'shop bazar', description: 'Commission 2024' },
-        { name: 'you know it', description: 'Commission 2024' },
-        { name: 'NEWSChannel', description: 'Commission 2024' },
-        { name: 'PLAin tracker', description: 'UI Project' },
-        { name: 'Pizza hut', description: 'UI Project' },
+        { name: 'Guideway', description: 'Navigation Guide | 2024' },
+        // { name: 'merapakistan', description: 'Pakistan Travel Guide | 2024' },
+        // { name: 'History book', description: 'Commission 2024' },
+        // { name: 'Homedashboard', description: 'Commission 2024' },
+        // { name: 'CrypTrack', description: 'Crypto Currency Live Tracking | 2024' },
+        // { name: 'shop bazar', description: 'Commission 2024' },
+        // { name: 'you know it', description: 'Commission 2024' },
+        // { name: 'NEWSChannel', description: 'Commission 2024' },
+        // { name: 'PLAin tracker', description: 'UI Project' },
+        // { name: 'Pizza hut', description: 'UI Project' },
     ];
 
     const textVariant = {
@@ -46,7 +47,7 @@ const Projects = () => {
         <>
          <Helmet>
         <title>Work - Maria Yasmeen</title>
-        <meta name="description" content="Browse through my most recent work in dev and design industry." />
+        <meta name="description" content="Browse through my most recent work in website design and development." />
       </Helmet>
             <Header />
             <div className="projectcenter" >
@@ -54,10 +55,8 @@ const Projects = () => {
                 <motion.div className="scrollable-content"  
  >
                     <div className="" style={{color:"transparent"}}>
-                        <p>djhdb</p>
-                        <p>dkhvhdb</p>
-                        <p>dkhvhdb</p>
-                        <p>dkhvhdb</p>
+                        {/* <p>djhdb</p>
+                    
                         <p>dkhvdb</p>
                         <p>dkhvhdb</p>
                         <p>dkhvhdb</p>
@@ -68,7 +67,7 @@ const Projects = () => {
                         <p>dkhvhdb</p>
                         <p>dkhvhdb</p>
                         <p>dkhvdb</p>
-                        <p>dkhvhdb</p>
+                        <p>dkhvhdb</p> */}
                         <p className='projectmargintxt'>dkhvhdb</p>
                     </div>
                     <motion.div
@@ -80,7 +79,7 @@ const Projects = () => {
                   >
 
                     {projects.map((project) => (
-                        <><div className="" style={{display:"flex", justifyContent:"space-evenly"}}>
+                        <><div  style={{display:"flex", justifyContent:"space-evenly"}}>
                                                 <span>{project.description}</span>
                                                 <span>View Case Study</span>
                                                 </div>
