@@ -37,7 +37,7 @@ function About() {
       <>
         <Header />
 
-        <div className="aboutcss" style={{marginLeft:"auto",  width:"210px", fontSize:"14px"}}> 
+        <div className="aboutcss" style={{marginLeft:"auto",  width:"210px", fontSize:"16px"}}> 
          <motion.div
          initial={{ opacity: 0, y: 3 }}  // Start with text below and invisible
          animate={{ opacity: 1, y: 0 }}  // End with text at its final position and visible

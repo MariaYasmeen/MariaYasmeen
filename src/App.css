@@ -204,7 +204,7 @@ font-family:monospace;
   font-weight: 400;
 }
 .projectmargintxt{
-  margin-bottom: 24em;
+  margin-bottom: 40em;
 }
 @media(max-width:1035px){
   .scrollable-content a {
@@ -485,9 +485,9 @@ height: 100%;color: lightgrey;
   box-sizing: border-box; /* Include border in the width and height */
   position: fixed;
   border-radius: 6px;
-  background: linear-gradient(85deg,#02010a, #242423,  #333533, #000000, #252422, #000000);
+  background: linear-gradient(80deg,#111111, #242423,  #808580, #000000, #42413e, #000000);
   background-size: 300% 300%;
-  animation: color 50s ease-out reverse infinite;
+  animation: color 40s ease-out  infinite;
   margin: 0;
   padding: 0;
 }

@@ -13,7 +13,7 @@ const Header = () => {
             <div className="box1">
               <div className="">
                 <h2 className="font-class">Maria Yasmeen</h2>
-                <p>Frontend Web Developer | UI/UX Designer</p>
+                <p>Frontend Web Developer | Web Designer</p>
 
                 {/* Toggle Button for Small Screens */}
                 <button

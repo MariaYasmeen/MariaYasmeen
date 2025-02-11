@@ -7,6 +7,7 @@ import './Pages.css';
  
 const Projects = () => {
     const projects = [
+        { name: 'BOSSWEAR', description: 'Men Fashion Responsive website 2025', link: 'https://b0sswear.web.app/' },
         { name: 'FontBook', description: 'Google Fonts Library 2024', link: 'https://fontboook.web.app/' },
         { name: 'M.Yasmeen', description: 'Clothing Store | 2024', link: 'https://myaasmeeen.web.app/' },
         { name: 'Typeathon', description: 'Speed Typing Test App | 2024', link: 'https://typeathon.web.app/' },
@@ -55,7 +56,6 @@ const Projects = () => {
                        {projects.map((project) => (
                             <><div  style={{display:"flex", justifyContent:"space-evenly"}}>
                             <span>{project.description}</span>
-                            <span>View Case Study</span>
                             </div>
 
     <Link
