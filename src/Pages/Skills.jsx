@@ -1,72 +1,81 @@
-import Header from "../Components/Header";
-import React from 'react';
-import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-const Skills = () => {
-    return (
-        <>
-            <Helmet>
-                <title>Skills - Maria Yasmeen</title>
-                <meta name="description" content="Highlighting my core competencies." />
-            </Helmet>
-            <Header />
-
-            <div className="skillcss"  style={{marginLeft:"auto"}}>
-                <motion.div
-                    initial={{ opacity: 0, y: 3 }}  // Start with text below and invisible
-                    animate={{ opacity: 1, y: 0 }}  // End with text at its final position and visible
-                    transition={{ duration: 0.9, ease: "easeOut" }}  // Smooth transition
-                    style={{  display:"inline-block"}}
-                >
-                    <div className="flex3boxes " style={{ display: "flex" }}>
-                        <div style={{ margin: "10px" }}>
-                            <div className="card-body">
-                            <p>_____________</p>
-                        <h5>Languages</h5>
-                                <p> HTML CSS Javascript</p>
-                                <p> SCSS</p>
-                                <p> TypeScript React JS</p>
-                                <p>_____________</p>
-                                <h5>Frontend Frameworks</h5>
-                                <p> React.js</p>
-                                <p>_____________</p>
-
-                            </div>
-                        </div>
-                        <div style={{ margin: "10px" }}>
-                            <div className="card-body">
-                            <p>_____________</p>
-                                <h5>UI/UX Design</h5>
-                                <p> Figma</p>
-                                <p> Wireframing & Prototyping</p>
-                                <p>_____________</p>
-                                <h5>UI Libraries</h5>
-                                <p>Bootstrap</p>
-                                <p>MUI (for UI designing)</p>
-                                <p> Framer Motion (for smooth Animations) </p>
-                                <p>_____________</p>
-                            </div>
-                        </div>
-                        <div style={{ margin: "10px" }}>
-                            <div className="card-body">
-                            <p>_____________</p>
-                                <h5>Version Control</h5>
-                                <p>Git and GitHub</p>
-                                <p>_____________</p>
-                                <h5>APIs</h5>
-                                <p>Axios (for APIs integration)</p>
-                                <p>RESTful APIs</p>
-                                <p>Chart.js </p>
-                                <p>Fetch API</p>
-                                <p>_____________</p>
-                            </div>
-                        </div>
-                    </div>
-                </motion.div>
+function Skills() {
+  return (
+    <div 
+      className="d-flex justify-content-end align-items-center  "
+      style={{   
+        marginLeft: "auto", // Pushes to the right
+        marginRight: "20px",
+        direction: "rtl", 
+        width: "60%", // Takes 61% of screen width
+        minWidth: "300px", // Ensures minimum width
+      }}
+    >
+      <div className="container text-white ">
+        <div className="row row-cols-1 row-cols-md-2 g-4">
+          
+          {/* Languages */}
+          <div className="col" style={{ maxWidth: "300px" }}>
+            <div className="p-2">
+              <h5 className="fw-bold">Languages</h5>
+              <div className="glassy-box">
+                <p>HTML, CSS, JavaScript</p> 
+                <p>TypeScript</p>
+              </div>
+           <div className="p-2">
+              <h5 className="fw-bold">UI/UX Design</h5>
+                 <p className="glassy-box">Figma</p> 
+             </div>
+             <div className="p-2">
+              <h5 className="fw-bold">Version Control</h5>
+              <div className="glassy-box">
+                <p>Git and GitHub</p>
+              </div>
             </div>
-        </>
-    );
+            
+            </div>
+          </div>
+
+          {/* Frontend Frameworks */}
+          <div className="col" style={{ maxWidth: "300px" }}>
+            <div className="p-2">
+              <h5 className="fw-bold">Frontend Frameworks</h5>
+                 <p className="glassy-box">React.js</p>
+            </div>
+            <div className="p-2">
+              <h5 className="fw-bold">UI Libraries</h5>
+                 <p className="glassy-box">Bootstrap, Tailwind CSS, Shadcn, MUI</p>
+                <p className="glassy-box">Framer Motion (for smooth animations)</p>
+             </div>
+           
+          </div>
+
+          
+        
+       
+        </div>
+      </div>
+
+      {/* CSS for glassy effect */}
+      <style>
+        {`
+          .glassy-box {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+          }
+          .glassy-box p {
+            margin: 5px 0;
+          }
+        `}
+      </style>
+    </div>
+  );
 }
 
 export default Skills;

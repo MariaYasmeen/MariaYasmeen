@@ -1,55 +1,33 @@
-
-import React, {useState, useEffect} from 'react';
-import Header from "../Components/Header";
-import { Helmet } from 'react-helmet-async';
-import { motion } from 'framer-motion';
-import LoadingPage from './LoadingPage';
-const LOADING_SCREEN_KEY = 'showLoadingScreen';
+import React from "react";
 
 function About() {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    // Check sessionStorage to determine if the loading screen should be shown
-    const loadingScreenShown = sessionStorage.getItem(LOADING_SCREEN_KEY);
-
-    if (!loadingScreenShown) {
-      setIsLoading(true);
-      const timer = setTimeout(() => {
-        setIsLoading(false);
-        sessionStorage.setItem(LOADING_SCREEN_KEY, 'true'); 
-      }, 2000);
-
-      return () => clearTimeout(timer); 
-    } else {
-      setIsLoading(false);
-    }
-  }, []);
-
   return (
-    <>
-     <Helmet>
-        <title>About - Maria Yasmeen</title>
-        <meta name="description" content="Crafting code to bring my ideas to life as a Developer and designer from Islamabad." />
-      </Helmet>
+    <div 
+      className="skills-container"
+      style={{
 
-{isLoading ? <LoadingPage /> : 
-      <>
-        <Header />
-
-        <div className="aboutcss" style={{   width:"100px", fontSize:"16px"}}> 
-         <motion.div
-         initial={{ opacity: 0, y: 3 }}  // Start with text below and invisible
-         animate={{ opacity: 1, y: 0 }}  // End with text at its final position and visible
-         transition={{ duration: 0.9, ease: "easeOut" }}  // Smooth transition
-         style={{ overflow: 'hidden', width: "20rem", lineHeight:"19px"}} 
->
-  Frontend Developer from Islamabad, I transform my ideas into code, making dynamic, responsive, and interactive web designs. I am confident that Web Designing and Development can be more different and impactful through observations and experiments.
-  </motion.div>
-     </div> 
-</>
-      }
-      </>
-)}
+        display: "flex",
+        justifyContent: "flex-end", // Push content to the right
+        alignItems: "center",
+        minHeight: "100vh", // Center vertically
+        padding: "20px",
+       maxWidth:"98%",
+        minHeight: "67vh", // Keeps it centered in viewport
+        padding: "20px",
+      }}
+    >
+      <div 
+        className="skills-content" 
+        style={{   marginLeft: "auto", // Pushes to the right
+            marginRight: "20px", 
+            width: "40%", // Takes 40% of screen width
+            minWidth: "300px",// Adds some space from right edge
+         }}
+      >
+        <p>  Frontend Developer from Islamabad, I transform my ideas into code, making dynamic, responsive, and interactive web designs. I am confident that Web Designing and Development can be more different and impactful through observations and experiments.</p>
+      </div>
+    </div>
+  );
+}
 
 export default About;
