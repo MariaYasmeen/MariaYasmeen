@@ -1,0 +1,40 @@
+/* Hide the default cursor */
+body {
+    cursor: none;
+  }
+  
+  /* Custom Cursor Dot */
+  .cursor-dot {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: transform 0.1s ease-out;
+    z-index: 9999; /* Ensures it's on top */
+  }
+  
+  /* Custom Cursor Outer (Padding Effect) */
+  .cursor-outline {
+    width: 44px;
+    height: 44px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: transform 0.15s ease-out;
+    z-index: 9998;
+  }
+  
+  /* Smooth effect when hovering over buttons or links */
+  a:hover ~ .cursor-dot,
+  button:hover ~ .cursor-dot {
+    transform: scale(1.5);
+    background-color: #f8f9fa; /* Light color on hover */
+  }
+  

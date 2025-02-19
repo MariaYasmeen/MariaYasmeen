@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Anton&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 .urbanist {
   font-family: "Urbanist", sans-serif;
   font-optical-sizing: auto;
@@ -9,6 +9,29 @@
 }
 .anton-regular {
   font-family: "Anton", sans-serif;
+  font-style: normal;
+}
+.poppins-extralight {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", serif;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -50,7 +73,7 @@
 
 .CaseStudCss p {
 font-size: 17px;
-font-family:monospace;
+font-family: "Poppins", serif;
     color: lightgrey; /* Text color */
 }
 
@@ -367,7 +390,7 @@ font-family:monospace;
 }
 
 .skillcss{
-  font-family:monospace;
+  font-family: "Poppins", serif;
   color: lightgrey;
   position: absolute;
   background-color: transparent !important;
@@ -384,12 +407,12 @@ font-family:monospace;
   line-height: 12px;
 }
 .aboutcss{
-  font-family:monospace;
+  font-family: "Poppins", serif;
   color: lightgrey;
   position: absolute;
   background-color: transparent !important;
   top: 55%;
-  width: 57%;
+  width: 59%;
   left: 75%;
   letter-spacing: 1px;
   font-size: 14px;
@@ -397,16 +420,17 @@ font-family:monospace;
 }
 
 .aboutcss div{
+  direction: rtl;
   padding: 0px;
   line-height: 10px;
-  width: 12em;
+  width: 14em;
   background-color: transparent;
   border: none !important;
 }
 .font-class{
   letter-spacing: 1px;
   font-weight: 500;
-  font-family:monospace;
+  font-family: "Poppins", serif;
 font-size: 53px !important;
 color: lightgrey;
 margin: 10px;
@@ -428,7 +452,7 @@ letter-spacing: 0px;
   color: white !important;
 }
 span{
-  font-family:monospace;
+  font-family: "Poppins", serif;
   font-size: 10px;
   font-weight: 400;
   padding: 6px;
@@ -450,7 +474,7 @@ height: 100%;color: lightgrey;
     align-items: center;
     width: 100%;
     height: 100%;
-    font-family:monospace;
+    font-family: "Poppins", serif;
     background-color:black !important;
    color: lightgrey;
   
@@ -535,13 +559,13 @@ height: 100%;color: lightgrey;
   height: 100%;
   flex: 1;
   margin: 35px;
-  font-family:monospace;
+  font-family: "Poppins", serif;
 }
 .navbarsticky{
   position:fixed;
 }
 .navbaritems a{
-  font-family:monospace;
+  font-family: "Poppins", serif;
   text-decoration: none;
   color: #000000;
 }
@@ -591,7 +615,7 @@ line-height: 1.2em;
 }
 
 .nav-btn {
-  font-family:monospace;
+  font-family: "Poppins", serif;
  display: flex;
   font-size: 15px;
   position: absolute;
@@ -604,7 +628,7 @@ line-height: 1.2em;
   display: none;
 }
 .nav-btn div a{
-  font-family:monospace;
+  font-family: "Poppins", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   letter-spacing: 1px;
@@ -620,7 +644,7 @@ color: grey;
 }
 .nav-btn a{
   color:lightgrey;
-  font-family:monospace;
+  font-family: "Poppins", serif;
   text-decoration: none;
 }
 @media(max-width:983px){
@@ -660,7 +684,7 @@ color: grey;
 }
 
 .gap-1{
-  font-family:monospace;
+  font-family: "Poppins", serif;
   display: flex !important;
   position: relative;
   color: lightgrey;
