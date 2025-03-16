@@ -203,3 +203,85 @@ html, body {
     flex-direction: column;
   }
 }
+/* Loader Container */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  /* Full viewport height */
+  width: 100vw;   /* Full viewport width */
+  background-color: #1c1c1c !important; /* Black-grey background */
+  position: fixed; 
+  top: 0;
+  left: 0;
+  z-index: 9999; /* Ensure it's above all content */
+}
+
+/* Loader Text */
+.loading-text {
+  color: white; /* Ensure text is white */
+  font-family: monospace;
+  font-size: 1.5rem; /* Corrected font size */
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Year Span */
+.year {
+  color: grey; /* Slightly dimmed color for "2024" */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .loading-text {
+    font-size: 1.2rem; /* Adjust size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .loading-text {
+    font-size: 1rem; /* Adjust size for mobile */
+  }
+}
+
+
+          /* Mobile Responsive */
+          @media (max-width: 1024px) {
+            .scroll-box {
+              width: 50%;
+            }
+          }
+
+          @media (max-width: 768px) {
+            .scroll-box {
+              width: 70%;
+              align-items: center; /* Center items on smaller screens */
+            }
+
+            .project-item {
+              text-align: center;
+            }
+          }
+
+          @media (max-width: 480px) {
+            .scroll-box {
+              width: 90%;
+            }
+
+            .project-item {
+              padding: 15px;
+            }
+
+            .project-name {
+              font-size: 1.2rem;
+            }
+
+            .project-desc {
+              font-size: 12px;
+            }
+
+            .github-btn {
+              font-size: 11px;
+              padding: 6px 14px;
+            }
+          }

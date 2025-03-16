@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="container-fluid d-flex align-items-start">
         {/* Left side: Name and line */}
         <div>
-          <h1 style={{ fontSize: '38px', color: 'white', marginBottom: '5px' }}>MARIA YASMEEN</h1>
+          <h1 style={{ fontSize: '41px', color: 'white', marginBottom: '5px' }}>MARIA YASMEEN</h1>
           <p style={{ fontSize: '15px', color: 'white', marginBottom: '0' }}>
             Frontend Web Developer | Web Designer
           </p>
@@ -48,7 +48,7 @@ const Navbar = () => {
             <Link to="/work" className="btn text-white">Work</Link>
             </li>
             <li className="nav-item">
-            <Link to="/skills" className="btn text-white">Hackathons</Link>
+            <Link to="/ongoingprojects" className="btn text-white">Ongoing Projects</Link>
             </li>
           </ul>
         </div>
