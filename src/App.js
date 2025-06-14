@@ -12,6 +12,7 @@ import Loader from "./Components/Loader.js";
 import { motion, AnimatePresence } from "framer-motion";
 import "./Components/cursor.js";
 import "./Components/cursor.css";
+import Hacks from "./Pages/Hacks.jsx";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -49,6 +50,7 @@ function App() {
                   <Route path="/about" element={<About />} />
                   <Route path="/skills" element={<Skills />} />
                   <Route path="/work" element={<Work />} />
+                  <Route path="/hackathons" element={<Hacks />} />
                   <Route path="/ongoingprojects" element={<OngoingP />} />
                 </Routes>
               </Home>

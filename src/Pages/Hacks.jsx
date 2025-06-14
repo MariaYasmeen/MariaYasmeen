@@ -2,38 +2,26 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 
-function Work() {
+function Hacks() {
   const projects = [
     {
-      name: "UCMS - FJWU",
-      desc: "The University Complaint Management System (UCMS) is a web-based centralized platform that helps report, track, and resolve complaints from students, faculty, and staff efficiently",
-      github: "https://github.com/MariaYasmeen/FJWU-UCMS.git",
-      report: "https://drive.google.com/file/d/1bugMIZ6drsEb0LfhMaG9SuQrvmuvIeLs/view?usp=drive_link"
+      name: "QUANTA",
+      desc: "AI CHATBOT FOR INSTANT MEDICAL GUIDANCE | Smart Medical Answers—Powered by AI.",
+      github: "https://github.com/MariaYasmeen/Quanta.git",
+      devpost: "https://devpost.com/software/ai-chatbot-for-instant-medical-guidance"
     },
-    {
-      name: "FONTBOOK",
-      desc: "React.js web app, enabling users to explore fonts, bookmark favorites, and preview Google Fonts.",
-      github: "https://github.com/MariaYasmeen/FontBook.git",
-      live: "https://fontboook.web.app"
-    },
-    {
-      name: "M.YASMEEN",
-      desc: "Online Clothing E-Commerce Store - with Firebase, featuring authentication, dynamic listings, category-based search, and cart management. Optimized UX with a responsive, intuitive UI.",
-      github: "https://github.com/MariaYasmeen/M.YASMEEN.git",
-      live: "https://myaasmeeen.web.app"
-    },
-    {
-      name: "TYPEATHON",
-      desc: "A Speed Typing Web App - Customizable tests, live word tracking, and detailed result analysis.",
-      github: "https://github.com/MariaYasmeen/Typeathon.git",
-      live: "https://typeathon.web.app"
-    },
-   ];
+     {
+      name: "GUIDEWAY",
+      desc: "Navigation Assistant - Developed to address the challenges of navigating public transportation systems across the globe.",
+      github: "https://github.com/MariaYasmeen/transit-onu-gnec-hackathon-frontend.git",
+      devpost: "https://devpost.com/software/gnec_hackaton_transit"
+    }
+  ];
 
   return (
     <>
       <Helmet>
-        <title>Work - Maria Yasmeen</title>
+        <title>Hacks - Maria Yasmeen</title>
         <meta
           name="description"
           content="Browse through my most recent work in website design and development."
@@ -55,26 +43,16 @@ function Work() {
               <h1 className="project-name">{project.name}</h1>
               <p style={{ fontSize: "15px" }}>{project.desc}</p>
               <div className="buttons">
-                {project.report && (
+              
+                {project.devpost && (
                   <a
                     className="btn px-3 py-2 btn-outline-light rounded-pill"
                     style={{ fontSize: "13px" }}
-                    href={project.report}
+                    href={project.devpost}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    REPORT
-                  </a>
-                )}
-                {project.live && (
-                  <a
-                    className="btn px-3 py-2 btn-outline-light rounded-pill"
-                    style={{ fontSize: "13px" }}
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    LIVE PREVIEW
+                    DEVPOST
                   </a>
                 )}
                 {project.github && (
@@ -98,4 +76,4 @@ function Work() {
   );
 }
 
-export default Work;
+export default Hacks;

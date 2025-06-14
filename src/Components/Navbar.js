@@ -1,57 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import './Navbar.css';
 
 const Navbar = () => {
-  return (
-    <nav className="navbar navbar-expand-lg navbar-light px-3" style={{position: 'relative'}}>
-      <div className="container-fluid d-flex align-items-start">
-        {/* Left side: Name and line */}
-        <div>
-          <h1 style={{ fontSize: '41px', color: 'white', marginBottom: '5px' }}>MARIA YASMEEN</h1>
-          <p style={{ fontSize: '15px', color: 'white', marginBottom: '0' }}>
-            Frontend Web Developer | Web Designer
-          </p>
-        </div>
+  const [menuOpen, setMenuOpen] = useState(false);
 
-        {/* Hamburger button for mobile view */}
+  return (
+    <nav className="custom-navbar">
+      <div className="navbar-container">
+        {/* Hamburger for mobile/tablet only */}
         <button
-          className="navbar-toggler ms-auto"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          className="hamburger-btn"
+          onClick={() => setMenuOpen(!menuOpen)}
         >
-          <span className="navbar-toggler-icon" />
+          <span className="hamburger-icon" />
         </button>
 
-        {/* Navbar items: Buttons centered at the top */}
-        <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
-          <ul 
-            style={{
-                background: 'rgba(255, 255, 255, 0.1)', // Glass effect
-                backdropFilter: 'blur(10px)',
-                padding: '7px 16px',
-                borderRadius: '20px',
-                border: 'none',
-                transition: '0.3s ease',
-              }}
-          className="navbar-nav d-flex flex-row justify-content-center gap-3">
-            <li className="nav-item">
-             <Link to="/about" className="btn text-white">About</Link>
-            </li>
-            <li className="nav-item">
-            <Link to="/skills" className="btn text-white">Skills</Link>
-            </li>
-            <li className="nav-item">
-            <Link to="/work" className="btn text-white">Work</Link>
-            </li>
-            <li className="nav-item">
-            <Link to="/ongoingprojects" className="btn text-white">Ongoing Projects</Link>
-            </li>
-          </ul>
+        {/* Name and subtitle */}
+        <div className="name-section">
+          <h1 className="site-name">MARIA YASMEEN</h1>
+          <p className="site-title">Frontend Web Developer | Web Designer</p>
         </div>
+
+        {/* Nav Links */}
+        <ul className={`nav-links ${menuOpen ? 'show' : ''}`}>
+          <li><Link to="/about" className="nav-btn">About</Link></li>
+          <li><Link to="/skills" className="nav-btn">Skills</Link></li>
+          <li><Link to="/work" className="nav-btn">Work</Link></li>
+          <li><Link to="/hackathons" className="nav-btn">Hackathons</Link></li>
+          <li><Link to="/ongoingprojects" className="nav-btn">Ongoing Projects</Link></li>
+        </ul>
       </div>
     </nav>
   );

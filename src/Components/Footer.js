@@ -47,7 +47,7 @@ const Footer = () => {
         </div>
         <div className="col-md-4 text-md-end text-center mt-3 mt-md-0">
           <a
-            href="https://drive.google.com/file/d/1EeYKVa0JnEhJB9umpUZNPSZ1gGdT-JAM/view?usp=sharing"
+            href="https://drive.google.com/file/d/1gsyCiNz-k3FjvwUwFlUgVffgYoaFVtAa/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             style={{ textDecoration: "none", color: "white" }}
