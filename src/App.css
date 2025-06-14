@@ -287,3 +287,18 @@ html, body {
           }
 
           
+          footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 26px !important;
+  width: 100%;
+  z-index: 9999;
+  color: white;
+}
+
+  @media (max-width: 771px) {
+            .footercss {
+              display: none !important;
+            }
+          }

@@ -56,13 +56,18 @@
   color: white;
   margin: 0;
 }
-
+ 
 .site-title {
   font-size: 15px;
   color: white;
   margin: 0;
 }
 
+.navbar-bar{
+    align-items: center !important;
+    display: flex !important;
+    justify-content: center !important;
+}
 /* Nav Links */
 .nav-links {
   list-style: none;

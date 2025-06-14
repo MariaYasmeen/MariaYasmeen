@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="container-fluid" style={{ fontSize: "13px", padding: '0px 22px 10px 22px' }}>
+    <footer className="footercss container-fluid" style={{ fontSize: "13px", padding: '0px 62px 16px 22px' }}>
       <div className="row d-flex align-items-center justify-content-between">
         <div className="col-md-6 d-flex flex-wrap gap-4">
           <div>
