@@ -7,12 +7,12 @@ import About from "./Pages/About";
 import Home from "./Pages/Home";
 import Skills from "./Pages/Skills";
 import Work from "./Pages/Work";
-import OngoingP from "./Pages/OngoingP.js";
 import Loader from "./Components/Loader.js";
 import { motion, AnimatePresence } from "framer-motion";
 import "./Components/cursor.js";
 import "./Components/cursor.css";
 import Hacks from "./Pages/Hacks.jsx";
+import Contact from "./Pages/Contact.js";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -51,7 +51,7 @@ function App() {
                   <Route path="/skills" element={<Skills />} />
                   <Route path="/work" element={<Work />} />
                   <Route path="/hackathons" element={<Hacks />} />
-                  <Route path="/ongoingprojects" element={<OngoingP />} />
+                  <Route path="/contact" element={<Contact />} />
                 </Routes>
               </Home>
             </BrowserRouter>

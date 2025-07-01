@@ -226,6 +226,9 @@ html, body {
   text-align: center;
 }
 
+.contact-form {
+right: 10px  !important;
+}
 /* Year Span */
 .year {
   color: grey; /* Slightly dimmed color for "2024" */
@@ -302,3 +305,9 @@ html, body {
               display: none !important;
             }
           }
+
+          .contact-section {
+    position: relative;
+    z-index: 1;
+}
+ 
