@@ -13,7 +13,7 @@
 <a href="https://github.com/MariaYasmeen" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
 <a href = "mailto:mariyayasmeen000@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
 
-<a href = "[mailto:mariyayasmeen000@gmail.com](https://drive.google.com/file/d/1dR_A5sy6A3l7wQLDKVs6F5zTMH-r6a_6/view?usp=sharing)">**Resume**</a>
+<a href = "https://drive.google.com/file/d/1dR_A5sy6A3l7wQLDKVs6F5zTMH-r6a_6/view?usp=sharing">**Resume**</a>
 
 
   
